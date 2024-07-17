@@ -1,0 +1,1 @@
+export type Rarity = "normal" | "rare";

@@ -1,0 +1,1 @@
+Use top navigation to inspect components!

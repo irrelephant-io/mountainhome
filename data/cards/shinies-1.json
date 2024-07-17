@@ -1,0 +1,11 @@
+{
+    "name": "Copper Coins",
+    "type": "Treasure - Shinies",
+    "layout": "resource",
+    "rarity": "normal",
+    "flavourText": "Not the sturdiest of metals but rare enough for a dwarf to enjoy the sight of.",
+    "value": {
+        "resource": "shinies",
+        "value": 1
+    }
+}

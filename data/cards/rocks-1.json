@@ -1,0 +1,11 @@
+{
+    "name": "Mossy Rocks",
+    "type": "Treasure - Rocks",
+    "layout": "resource",
+    "rarity": "normal",
+    "flavourText": "I met a friendly mermaid Dasha who traded me some mossy wet rocks - Ewww.\n- Corn The Barbarian",
+    "value": {
+        "resource": "rock",
+        "value": 1
+    }
+}

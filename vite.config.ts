@@ -3,7 +3,12 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	server: {
-		"host": "::1"
+		host: "::1",
+		fs: {
+			allow: [
+				"data"
+			]
+		}
 	},
 	plugins: [sveltekit()]
 });

@@ -1,0 +1,12 @@
+{
+    "title": "Ymir's White",
+    "type": "Treasure - Booze",
+    "artUri": "art/cards/resources/booze/booze-1.png",
+    "layout": "extendedArt",
+    "rarity": "normal",
+    "flavourText": "Light and refreshing! Exactly what one needs after a hard day of pick swinging!",
+    "value": {
+        "resource": "booze",
+        "value": 1
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "title": "Witch's Hut",
+    "type": "Unique Building",
+    "artUri": "art/cards/buildings/unique/hut.png",
+    "layout": "normal",
+    "mainText": "When you draw bid cards, you may draw up to three extra. You must trash one additional card at random for every extra card drawn this way.",
+    "rarity": "normal",
+    "flavourText": "The local coven of witches is always there to help you achieve your goals. The question is: what do they ask in return? Some say, it’s a blood price... - Karina, the Bewitching Witch",
+    "value": {
+        "resource": "vp",
+        "value": 2
+    },
+    "cost": [
+        [{ "resource": "shinies", "value": 2 }, { "resource": "booze", "value": 2 }],
+        [{ "resource": "shinies", "value": 2 }, { "resource": "booze", "value": 2 }]
+    ]
+}

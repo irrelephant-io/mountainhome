@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { ICard } from "../../lib/ICard.js";
-    import Card from "../../components/Card.svelte";
+    import Card from "../../components/Card.svelte.js";
 
     const rocks: ICard = {
         "title": "Mossy Rocks of Jonathan Cat the III",
@@ -67,7 +67,7 @@
     };
 </script>
 
-<Card cardDefinition={rocks} />
-<Card cardDefinition={dwarfFortress} />
-<Card cardDefinition={dwarfFortressNoMain} />
-<Card cardDefinition={dwarfFortressNoFlavour} />
+<Card definition={rocks} />
+<Card definition={dwarfFortress} />
+<Card definition={dwarfFortressNoMain} />
+<Card definition={dwarfFortressNoFlavour} />

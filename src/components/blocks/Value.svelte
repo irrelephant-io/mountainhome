@@ -24,7 +24,9 @@
 
 <div class="box {style}">
     <div class="icon {style}" style="--icon: url('{getIcon(value)}')" />
-    <span class="value {style}">{value.value}</span>
+    {#if value.value !== '_'}
+        <span class="value {style}">{value.value}</span>
+    {/if}
 </div>
 
 <style lang="css">

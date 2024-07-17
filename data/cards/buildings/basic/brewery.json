@@ -1,0 +1,17 @@
+{
+    "title": "Southammer Brewery",
+    "type": "Basic Building",
+    "artUri": "art/cards/buildings/basic/brewery.png",
+    "layout": "normal",
+    "mainText": "Add {r:booze=2}.",
+    "rarity": "normal",
+    "flavourText": "The Stouthammers were renowned for its fine ales and ciders tended to its jovial Elder Brewer Ymir. - Thorvald the Event Organizer.",
+    "value": {
+        "resource": "vp",
+        "value": 1
+    },
+    "cost": [
+        [{ "resource": "mixed", "value": 3 }],
+        [{ "resource": "mixed", "value": 4 }]
+    ]
+}

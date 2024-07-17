@@ -1,0 +1,13 @@
+{
+    "title": "Loki, the Scoundrel",
+    "type": "Legendary Dwarf",
+    "artUri": "art/cards/dwarves/legendary/loki.png",
+    "layout": "normal",
+    "mainText": "On Bid: you may pick a player. You choose which cards that player has to trash at the end of the bid.",
+    "rarity": "rare",
+    "flavourText": "Such a beautiful pile of gems you have there in your pouch. Would be a shame if something were to happen to it...",
+    "value": {
+        "resource": "vp",
+        "value": 3
+    }
+}

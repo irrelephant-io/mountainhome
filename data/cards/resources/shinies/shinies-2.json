@@ -1,0 +1,12 @@
+{
+    "title": "Silver Coins",
+    "type": "Treasure - Shinies",
+    "artUri": "art/cards/resources/shinies/shinies-2.png",
+    "layout": "extendedArt",
+    "rarity": "normal",
+    "flavourText": "Pristine and beautiful as any product of craftsdwarfship should be.",
+    "value": {
+        "resource": "shinies",
+        "value": 2
+    }
+}

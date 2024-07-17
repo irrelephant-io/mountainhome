@@ -1,0 +1,13 @@
+{
+    "title": "Baldur, the Bearded Wanderer",
+    "type": "Legendary Dwarf",
+    "artUri": "art/cards/dwarves/legendary/baldur.png",
+    "layout": "normal",
+    "mainText": "Pick one:{n}- Look at top 5 cards of the exploration pile and put them back in any order.{n}-Explore 5 times and shuffle Baldur into the exploration pile.",
+    "rarity": "rare",
+    "flavourText": "He went far and wide but never found a wife. - Didi, the Elder Miner",
+    "value": {
+        "resource": "vp",
+        "value": 3
+    }
+}

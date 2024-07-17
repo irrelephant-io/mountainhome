@@ -1,0 +1,9 @@
+{
+    "title": "Marketplace",
+    "type": "Unique Location",
+    "artUri": "art/cards/buildings/unique/marketplace.png",
+    "layout": "normal",
+    "mainText": "Players may once per turn during their action step echange a card from their hand with any player for any card. The terms of exchange are defined by mutual agreement.",
+    "rarity": "normal",
+    "flavourText": "A place of culture, trade and occasional mugging."
+}

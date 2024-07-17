@@ -1,0 +1,18 @@
+{
+    "title": "Hero Tavern",
+    "type": "Unique Project",
+    "artUri": "art/cards/buildings/projects/adventurers.png",
+    "layout": "normal",
+    "mainText": "Each player can only have one project in their deck or in their town.",
+    "rarity": "rare",
+    "flavourText": "No endeavour is too dangerous for the legendary wrestlers and hammerdwarves that spend their days roaming the lands in search of adventure.",
+    "value": {
+        "resource": "vp",
+        "value": "3"
+    },
+    "cost": [
+        [{ "resource": "shinies", "value": 7 }, { "resource": "booze", "value": 5 }],
+        [{ "resource": "shinies", "value": 7 }, { "resource": "booze", "value": 5 }],
+        [{ "resource": "shinies", "value": 7 }, { "resource": "booze", "value": 5 }]
+    ]
+}

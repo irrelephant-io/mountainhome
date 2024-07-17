@@ -1,0 +1,13 @@
+{
+    "title": "Ymir, the Elder Brewer",
+    "type": "Renowned Dwarf",
+    "artUri": "art/cards/dwarves/renowned/ymir.png",
+    "layout": "normal",
+    "mainText": "Add {r:booze=3} or double the output of your breweries until end of turn.",
+    "rarity": "normal",
+    "flavourText": "By Odin’s might! I declare this batch a resounding success!",
+    "value": {
+        "resource": "vp",
+        "value": 2
+    }
+}

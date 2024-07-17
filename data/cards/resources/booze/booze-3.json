@@ -1,0 +1,12 @@
+{
+    "title": "Idunn's Golden Apple Cider",
+    "type": "Treasure - Booze",
+    "artUri": "art/cards/resources/booze/booze-3.png",
+    "layout": "extendedArt",
+    "rarity": "normal",
+    "flavourText": "The fresh and subtly sweet taste evokes many memories of summer and young love. Even the most wicked can't resist.",
+    "value": {
+        "resource": "booze",
+        "value": 3
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "title": "Erik, the Dwarven Labourer",
+    "type": "Dwarf",
+    "artUri": "art/cards/dwarves/normal/normal-3.png",
+    "layout": "normal",
+    "mainText": "Add {r:rocks=1}, {r:shinies=1}, or {r:booze=1}.",
+    "rarity": "normal",
+    "flavourText": "Not every dwarf has to be renowned, but every one of them is important nonetheless. They are the ones who build our furniture, sharpen our tools and collect our barley."
+}

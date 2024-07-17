@@ -1,0 +1,19 @@
+{
+    "title": "Treasure Vault",
+    "type": "Unique Project",
+    "artUri": "art/cards/buildings/projects/vault.png",
+    "layout": "normal",
+    "mainText": "Each player can only have one project in their deck or in their town.{n}{n}This project additionally awards {r:vp=1} for each construction progress even if it is unfinished.",
+    "rarity": "rare",
+    "flavourText": "Who said that only dragons are allowed to hoard huge quantities of shiny gems and coin?",
+    "value": {
+        "resource": "vp",
+        "value": "2"
+    },
+    "cost": [
+        [{ "resource": "shinies", "value": 10 }],
+        [{ "resource": "shinies", "value": 10 }],
+        [{ "resource": "shinies", "value": 10 }],
+        [{ "resource": "shinies", "value": 10 }]
+    ]
+}

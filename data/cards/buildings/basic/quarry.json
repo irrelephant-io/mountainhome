@@ -1,0 +1,17 @@
+{
+    "title": "Rock Quarry",
+    "type": "Basic Building",
+    "artUri": "art/cards/buildings/basic/quarry.png",
+    "layout": "normal",
+    "mainText": "Add {r:rocks=2}.",
+    "rarity": "normal",
+    "flavourText": "I dig my hole, you build the wall...",
+    "value": {
+        "resource": "vp",
+        "value": 1
+    },
+    "cost": [
+        [{ "resource": "mixed", "value": 3 }],
+        [{ "resource": "mixed", "value": 4 }]
+    ]
+}

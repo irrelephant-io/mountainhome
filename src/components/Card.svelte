@@ -3,23 +3,25 @@
     import ExtendedArt from "./layouts/ExtendedArt.svelte";
     import Normal from "./layouts/Normal.svelte";
 
-    export let cardDefinition: ICard;
+    export let definition: ICard;
 </script>
 
 <div class="card">
     <div class="inner">
-        {#if cardDefinition.layout === "extendedArt"}
-            <ExtendedArt cardDefinition={cardDefinition}/>
-        {:else if cardDefinition.layout == "normal"}
-            <Normal cardDefinition={cardDefinition}/>
+        {#if definition.layout === "extendedArt"}
+            <ExtendedArt definition={definition}/>
+        {:else if definition.layout == "normal"}
+            <Normal definition={definition}/>
+        {:else}
+            <p>Unknown Layout!</p>
         {/if}
     </div>
 </div>
 
 <style>
     .card {
-        width: 335px;
-        height: 468px;
+        width: 315px;
+        height: 448px;
         background: black;
         color: white;
         padding: 10px;

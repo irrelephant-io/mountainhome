@@ -1,0 +1,9 @@
+{
+    "title": "Expansive Cavern",
+    "type": "Unique Location",
+    "artUri": "art/cards/buildings/unique/cavern.png",
+    "layout": "normal",
+    "mainText": "At the start of their action phase, a player may put a Dwarf into the Expansive Cavern. Then for each of their Dwarves there, roll a D6:{n}- 1 to 3: discard the dwarf;{n}- 3 to 5: add {r:shinies=4} or {r:rocks=4};{n} - 6: progress one of their constructions.",
+    "rarity": "normal",
+    "flavourText": "Beware of giant spiders!"
+}

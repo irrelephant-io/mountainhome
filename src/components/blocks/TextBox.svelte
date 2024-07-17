@@ -46,6 +46,7 @@ import RichText from "./RichText.svelte";
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        width: 80%;
     }
     
     .solid-top {
@@ -73,7 +74,7 @@ import RichText from "./RichText.svelte";
 
     .main {
         background-color: white;
-        flex: 2;
+        flex: 2.5;
         color: #000;
         font-size: 12px;
         font-style: normal;

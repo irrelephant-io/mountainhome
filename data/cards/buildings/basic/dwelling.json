@@ -1,0 +1,17 @@
+{
+    "title": "Hillock Dwelling",
+    "type": "Basic Building",
+    "artUri": "art/cards/buildings/basic/dwelling.png",
+    "layout": "normal",
+    "mainText": "Pay {r:booze=1}: You may put up to one dwarf card into the Hillock Dwelling.{n}Discard the dwarf inside Hillock Dwelling: Perform that dwarf's construction action.",
+    "rarity": "normal",
+    "flavourText": "Stand ready and hold onto your hammers and saws!",
+    "value": {
+        "resource": "vp",
+        "value": 1
+    },
+    "cost": [
+        [{ "resource": "mixed", "value": 3 }],
+        [{ "resource": "mixed", "value": 3 }]
+    ]
+}

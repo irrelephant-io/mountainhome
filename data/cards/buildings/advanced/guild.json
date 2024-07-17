@@ -1,0 +1,17 @@
+{
+    "title": "Rock Carvers' Guild",
+    "type": "Advanced Building",
+    "artUri": "art/cards/buildings/advanced/guild.png",
+    "layout": "normal",
+    "mainText": "Pay {r:rocks=x}: Add {r:rocks=x}{r:rocks=x}.",
+    "rarity": "normal",
+    "flavourText": "As buildings are erected and roads are laid, the demand for refined materials only rises.",
+    "value": {
+        "resource": "vp",
+        "value": 1
+    },
+    "cost": [
+        [{ "resource": "mixed", "value": 7 }],
+        [{ "resource": "mixed", "value": 8 }]
+    ]
+}

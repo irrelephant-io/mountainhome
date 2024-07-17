@@ -1,0 +1,12 @@
+{
+    "title": "Granite Rocks",
+    "type": "Treasure - Rocks",
+    "artUri": "art/cards/resources/rocks/rocks-2.png",
+    "layout": "extendedArt",
+    "rarity": "normal",
+    "flavourText": "Solid, Loyal and Perfect. Any dwarfs favourite building material!\n- Riani Smedson.",
+    "value": {
+        "resource": "rocks",
+        "value": 2
+    }
+}

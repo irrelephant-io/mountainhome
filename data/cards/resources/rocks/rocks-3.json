@@ -1,0 +1,12 @@
+{
+    "title": "Assorted Marble",
+    "type": "Treasure - Rocks",
+    "artUri": "art/cards/resources/rocks/rocks-3.png",
+    "layout": "extendedArt",
+    "rarity": "normal",
+    "flavourText": "White? Black? Maybe both? I just can’t decide!\n- Ori, the Quartermaster.",
+    "value": {
+        "resource": "rocks",
+        "value": 3
+    }
+}

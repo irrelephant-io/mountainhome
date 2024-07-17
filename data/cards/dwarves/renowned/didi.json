@@ -1,0 +1,13 @@
+{
+    "title": "Didi, the Elder Miner",
+    "type": "Renowned Dwarf",
+    "artUri": "art/cards/dwarves/renowned/didi.png",
+    "layout": "normal",
+    "mainText": "Add {r:shinies=2} or double the output of your mines until end of turn.",
+    "rarity": "normal",
+    "flavourText": "Digging deeply and greedily. Might be the only dwarf to have witnessed an Adamant vein - Karina, the Bewitching Witch.",
+    "value": {
+        "resource": "vp",
+        "value": 2
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Gems",
+    "type": "Treasure - Shinies",
+    "artUri": "art/cards/resources/shinies/shinies-4.png",
+    "layout": "extendedArt",
+    "rarity": "rare",
+    "flavourText": "The sight of one of these is enough to light fire to any dwarven eye.",
+    "value": {
+        "resource": "shinies",
+        "value": 4
+    }
+}

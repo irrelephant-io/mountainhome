@@ -7,30 +7,30 @@
     import TextBox from "../blocks/TextBox.svelte";
     import Art from "../blocks/Art.svelte";
 
-    export let cardDefinition: ICard;
+    export let definition: ICard;
 </script>
 
 <header>
-{#if cardDefinition.value !== undefined}
-    <ValueBox value={cardDefinition.value} />
+{#if definition.value !== undefined}
+    <ValueBox value={definition.value} />
 {/if}
 
-{#if cardDefinition.cost !== undefined}
-    <CostTrack cost={cardDefinition.cost} />
+{#if definition.cost !== undefined}
+    <CostTrack cost={definition.cost} />
 {/if}
 </header>
 
 <main class="main-block">
-    <Art uri={cardDefinition.artUri} />
+    <Art uri={definition.artUri} />
 
     <CardTitle
-        title={cardDefinition.title}
-        rarity={cardDefinition.rarity}
+        title={definition.title}
+        rarity={definition.rarity}
     />
     <TextBox
-        mainText={cardDefinition.mainText}
-        flavourText={cardDefinition.flavourText}
-        cardType={cardDefinition.type}
+        mainText={definition.mainText}
+        flavourText={definition.flavourText}
+        cardType={definition.type}
     />
 </main>
 

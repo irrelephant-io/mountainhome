@@ -1,0 +1,13 @@
+{
+    "title": "Karina, the Bewitching Witch",
+    "type": "Legendary Dwarf",
+    "artUri": "art/cards/dwarves/legendary/karina.png",
+    "layout": "normal",
+    "mainText": "Whenever another player uses their dwarf to construct or use their special action, you may discard Karina from your hand or town: Negate the action of that dwarf.",
+    "rarity": "rare",
+    "flavourText": "Not even the woodland nymphs could compete with the charm of this lady. - Thorvald - The Event Organiser",
+    "value": {
+        "resource": "vp",
+        "value": 3
+    }
+}

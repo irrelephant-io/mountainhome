@@ -4,7 +4,7 @@
         props?: any
     };
 
-    const specialBlockSyntaxPattern = /{(?<type>r|n):?(?<desc>(?<spec>\w+)=(?<value>\w)+)?}/gm;
+    const specialBlockSyntaxPattern = /{(?<type>r|n):?(?<desc>(?<spec>\w+)=(?<value>[\w\+]+))?}/gm;
 
     function getSpecialComponentDescriptor(match: RegExpExecArray): ComponentDescriptor {
         if (match.groups!["type"] === "r") {

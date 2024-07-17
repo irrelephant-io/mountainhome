@@ -1,0 +1,18 @@
+{
+    "title": "Magma Forge",
+    "type": "Advanced Building",
+    "artUri": "art/cards/buildings/advanced/forge.png",
+    "layout": "normal",
+    "mainText": "Pay {r:shinies=x}: Add {r:shinies=x}{r:shinies=x}.",
+    "rarity": "normal",
+    "flavourText": "Nothing makes me happier than seeing the glowing red magma turn ore into beautiful ingots... - Marg, the Legendary Smith",
+    "value": {
+        "resource": "vp",
+        "value": 1
+    },
+    "cost": [
+        [{ "resource": "mixed", "value": 6 }],
+        [{ "resource": "mixed", "value": 8 }],
+        [{ "resource": "mixed", "value": 10 }]
+    ]
+}

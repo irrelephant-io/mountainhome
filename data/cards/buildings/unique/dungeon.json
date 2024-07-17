@@ -1,0 +1,17 @@
+{
+    "title": "Dark Dungeon",
+    "type": "Unique Building",
+    "artUri": "art/cards/buildings/unique/dungeon.png",
+    "layout": "normal",
+    "mainText": "If you discover an Event during exploration, you may put it into the Dark Dungeon instead of resolving it.{n}After your draw step, if there are events in the Dungeon, add 1 upkeep counter to it and pay {r:shinies=1} for every upkeep counter. If you can't, resolve all of the events in the dungeon.",
+    "rarity": "normal",
+    "flavourText": "The cost of preparedness - measured now in gold, later in blood. - Unknown",
+    "value": {
+        "resource": "vp",
+        "value": 2
+    },
+    "cost": [
+        [{ "resource": "rocks", "value": 2 }, { "resource": "shinies", "value": 1 }],
+        [{ "resource": "rocks", "value": 2 }, { "resource": "shinies", "value": 1 }]
+    ]
+}

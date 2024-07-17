@@ -1,0 +1,13 @@
+{
+    "title": "Lagertha, the Paladin",
+    "type": "Legendary Dwarf",
+    "artUri": "art/cards/dwarves/legendary/lagertha.png",
+    "layout": "normal",
+    "mainText": "Whenever you or anything you own would be affected by a negative effect, you may discard Lagertha from your hand or town: Negate that effect.",
+    "rarity": "rare",
+    "flavourText": "...not just any Paladin! I am of the order of the Dwarven Grace! Not a single elf could compare to the glory of the Dwarven Grace. Everything else is hearsay.",
+    "value": {
+        "resource": "vp",
+        "value": 3
+    }
+}

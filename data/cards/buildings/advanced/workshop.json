@@ -1,0 +1,17 @@
+{
+    "title": "Toolmaker's Workshop",
+    "type": "Advanced Building",
+    "artUri": "art/cards/buildings/advanced/workshop.png",
+    "layout": "normal",
+    "mainText": "Pay {r:mixed=4}: finish one construction step.{n}Tap: Untap up to one target building.",
+    "rarity": "normal",
+    "flavourText": "The tools is what distinguishes us from the filthy tree hugging elves. And we are damn good at making them tools.",
+    "value": {
+        "resource": "vp",
+        "value": 1
+    },
+    "cost": [
+        [{ "resource": "mixed", "value": 7 }],
+        [{ "resource": "mixed", "value": 8 }]
+    ]
+}

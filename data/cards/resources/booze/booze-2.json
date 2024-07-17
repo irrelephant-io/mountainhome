@@ -1,0 +1,12 @@
+{
+    "title": "Mushroom Wine",
+    "type": "Treasure - Booze",
+    "artUri": "art/cards/resources/booze/booze-2.png",
+    "layout": "extendedArt",
+    "rarity": "normal",
+    "flavourText": "Why eat mushrooms when you can drink them?",
+    "value": {
+        "resource": "booze",
+        "value": 2
+    }
+}

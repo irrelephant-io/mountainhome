@@ -1,11 +1,12 @@
 {
-    "name": "Mossy Rocks",
+    "title": "Mossy Rocks",
     "type": "Treasure - Rocks",
-    "layout": "resource",
+    "artUri": "art/cards/resources/rocks/rocks-1.png",
+    "layout": "extendedArt",
     "rarity": "normal",
     "flavourText": "I met a friendly mermaid Dasha who traded me some mossy wet rocks - Ewww.\n- Corn The Barbarian",
     "value": {
-        "resource": "rock",
+        "resource": "rocks",
         "value": 1
     }
 }

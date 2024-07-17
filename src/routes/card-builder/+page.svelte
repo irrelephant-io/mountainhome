@@ -1,22 +1,8 @@
 <script lang="ts">
-    import type { ICard } from "../../lib/ICard.js";
-    import Card from "../../components/Card.svelte.js";
+    import type { ICard } from "$lib/ICard.js";
+    import Card from "../../components/Card.svelte";
 
-    const rocks: ICard = {
-        "title": "Mossy Rocks of Jonathan Cat the III",
-        "type": "Treasure - Cat Poopoo",
-        "artUri": "/art/rocks-1.png",
-        "layout": "extendedArt",
-        "rarity": "normal",
-        "mainText": "Gain 3 rocks and draw one card. If you do, gross out your friends. Ew....",
-        "flavourText": "A few very dry rocks of cat poopoo. Not recommended for building with. \n- Big Billy, the Barbarian Cat",
-        "value": {
-            "resource": "booze",
-            "value": 69
-        }
-    };
-
-    const dwarfFortress: ICard = {
+    let currentDefinition: ICard|null = {
         "title": "Dwarf Fortress",
         "type": "Building - Unique",
         "artUri": "/art/dwarf-fortress.png",
@@ -28,46 +14,57 @@
         "cost": [
             [ { "resource": "rocks", "value": 3 }, { "resource": "booze", "value": 2 } ],
             [ { "resource": "rocks", "value": 3 }, { "resource": "shinies", "value": 2 } ],
-            [ { "resource": "rocks", "value": 3 }, { "resource": "booze", "value": 2 } ],
-            [ { "resource": "rocks", "value": 3 }, { "resource": "booze", "value": 2 } ],
             [ { "resource": "rocks", "value": 3 }, { "resource": "shinies", "value": 2 } ],
         ]
     };
 
-    
-    const dwarfFortressNoMain: ICard = {
-        "title": "Dwarf Fortress",
-        "type": "Building - Unique",
-        "artUri": "/art/dwarf-fortress.png",
-        "layout": "normal",
-        "rarity": "normal",
-        "flavourText": "Some dwarves are just too powerful to be allowed to roam the lands of Rotheim. Thankfully, exile in a lavish fort is not such a terrible fate.",
-        "value": {
-            "resource": "shinies",
-            "value": "x"
-        },
-        "cost": [
-            [ { "resource": "rocks", "value": 3 }, { "resource": "booze", "value": 2 } ],
-            [ { "resource": "rocks", "value": 3 }, { "resource": "shinies", "value": 2 } ],
-            [ { "resource": "vp", "value": 3 }, { "resource": "booze", "value": 10 }  ]
-        ]
-    };
-
-    const dwarfFortressNoFlavour: ICard = {
-        "title": "Dwarf Fortress",
-        "type": "Building - Unique",
-        "artUri": "/art/dwarf-fortress.png",
-        "layout": "normal",
-        "rarity": "normal",
-        "mainText": "{booze=1}: Test your might!\nSome dwarves are just too powerful to be allowed to roam the lands of Rotheim. Thankfully, exile in a lavish fort is not such a terrible fate.",
-        "value": {
-            "resource": "booze",
-            "value": 4
+    function update() {
+        const editor = document.getElementById("json-card") as HTMLTextAreaElement;
+        try {
+            currentDefinition = JSON.parse(editor.value);
         }
-    };
+        catch {
+            currentDefinition = null;
+        }
+    }
+
+    let currentJson = JSON.stringify(currentDefinition, null, 4);
 </script>
 
-<Card definition={rocks} />
-<Card definition={dwarfFortress} />
-<Card definition={dwarfFortressNoMain} />
-<Card definition={dwarfFortressNoFlavour} />
+<div class="box">
+    <div class="text-editor">
+        <textarea id="json-card" on:change={update} value={currentJson}/>
+    </div>
+    
+    <div class="card-holder">
+        {#if currentDefinition === null}
+            <p style="color: red; font-size: 32px;">JSON error :C</p>
+        {:else}
+            <Card definition={currentDefinition} />
+        {/if}
+    </div>
+</div>
+
+<style>
+    .box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-editor {
+        width: 50%;
+    }
+
+    .text-editor>textarea {
+        width: 100%;
+        height: 100%;
+        min-height: 800px;
+    }
+
+    .card-holder {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

@@ -1,18 +1,20 @@
 <script lang="ts">
+    import type { Rarity } from "$lib/Rarity";
     import type { Cost } from "../../lib/Cost";
     import CostBlock from "./cost/CostBlock.svelte";
 
     export let cost: Cost;
+    export let rarity: Rarity;
 </script>
 
 <div class="box">
     {#each cost as block, blockIndex}
         {#if blockIndex == cost.length - 1}
-            <CostBlock costBlock={block} type="end" />
+            <CostBlock rarity={rarity} costBlock={block} type="end" />
         {:else if blockIndex == 0}
-            <CostBlock costBlock={block} type="start" />
+            <CostBlock rarity={rarity} costBlock={block} type="start" />
         {:else}
-            <CostBlock costBlock={block} type="link" />
+            <CostBlock rarity={rarity} costBlock={block} type="link" />
         {/if}
     {/each}
 </div>

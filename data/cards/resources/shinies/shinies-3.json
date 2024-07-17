@@ -4,7 +4,7 @@
     "artUri": "art/cards/resources/shinies/shinies-3.png",
     "layout": "extendedArt",
     "rarity": "normal",
-    "flavourText": "Could you even call yourself a dwarf if you don't bathe daily in a hoard of gold?",
+    "flavourText": "Could you even call yourself a Drawf if you don't bathe daily in a hoard of gold?",
     "value": {
         "resource": "shinies",
         "value": 3

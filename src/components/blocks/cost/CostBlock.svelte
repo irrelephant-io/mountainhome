@@ -1,23 +1,39 @@
 <script lang="ts">
-    import Start from "./start.svg?raw"
-    import Link from "./link.svg?raw"
-    import End from "./end.svg?raw"
+    import StartNormal from "./start-normal.svg?raw"
+    import LinkNormal from "./link-normal.svg?raw"
+    import EndNormal from "./end-normal.svg?raw"
+
+    import StartRare from "./start-rare.svg?raw"
+    import LinkRare from "./link-rare.svg?raw"
+    import EndRare from "./end-rare.svg?raw"
 
     import type { IValue } from "../../../lib/Value";
     import Value from "../Value.svelte";
+    import type { Rarity } from "$lib/Rarity";
 
     export let costBlock: IValue[];
+    export let rarity: Rarity;
     export let type: "start" | "link" | "end";
 </script>
 
 <div class="box">
     <div class="block-background">
-        {#if type === "start"}
-            {@html Start}
-        {:else if type === "link"}
-            {@html Link}
+        {#if rarity === "normal"}
+            {#if type === "start"}
+                {@html StartNormal}
+            {:else if type === "link"}
+                {@html LinkNormal}
+            {:else}
+                {@html EndNormal}
+            {/if}
         {:else}
-            {@html End}
+            {#if type === "start"}
+                {@html StartRare}
+            {:else if type === "link"}
+                {@html LinkRare}
+            {:else}
+                {@html EndRare}
+            {/if}
         {/if}
     </div>
     <div class="block-foreground">

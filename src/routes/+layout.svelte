@@ -5,6 +5,8 @@
 
         --main-border: 1px solid #000;
         --main-border-radius: 15px;
+
+        --color-bg-rare: #ffe8ae;
     }
 
     body {

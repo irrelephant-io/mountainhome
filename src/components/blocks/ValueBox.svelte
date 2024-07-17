@@ -1,10 +1,14 @@
 <script lang="ts">
+    import type { Rarity } from "$lib/Rarity.js";
     import type { IValue } from "../../lib/Value.ts";
-    export let value: IValue;
     import Value from "./Value.svelte";
+    
+    export let value: IValue;
+    export let rarity: Rarity;
+
 </script>
 
-<div class="box">
+<div class="box {rarity}">
     <div class="box-content">
         <Value value={value} style="big" />
     </div>
@@ -28,6 +32,16 @@
             rgba(0, 0, 0, 0.40) 99.99%,
             rgba(0, 0, 0, 0.00) 100%
         ), #DFE4EA;
+    }
+
+    .box.rare {
+        background: linear-gradient(
+            218.42deg,
+            rgba(0, 0, 0, 0) 7.01%,
+            rgba(0, 0, 0, 0.0820834) 46.59%,
+            rgba(0, 0, 0, 0.4) 96.82%,
+            rgba(0, 0, 0, 0) 96.83%
+        ), #FFE8AE;
     }
 
     .box-content {

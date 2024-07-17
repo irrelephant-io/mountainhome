@@ -5,11 +5,7 @@
     export let rarity: Rarity;
 </script>
 
-{#if rarity === "normal"}
-    <div class="name box">{title}</div>
-{:else}
-    <div class="name box rare">{title}</div>
-{/if}
+<div class="name box {rarity}">{title}</div>
 
 <style lang="css">
     .name {
@@ -34,6 +30,6 @@
     }
     
     .rare.box {
-        border: 1px solid gold;
+        background-color: var(--color-bg-rare);
     }
 </style>

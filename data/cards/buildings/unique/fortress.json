@@ -3,7 +3,7 @@
     "type": "Unique Location",
     "artUri": "art/cards/buildings/unique/fortress.png",
     "layout": "normal",
-    "mainText": "Mushroom Wine now adds an additional {r:booze=1}.{n}When you discover a Dwarf during exploration you may pay {r:booze=5} to put them into dwarf fortress instead of bidding.{n}Pay {r:booze=3}: Put one of the Dwarves in the fortress on top of the exploration pile.",
+    "mainText": "Mushroom Wine now adds an additional {r:booze=1}.{n}When you discover a Dwarf during exploration you may pay {r:booze=5} to put them into Drawf Fortress instead of bidding.{n}Pay {r:booze=3}: Put one of the Dwarves in the Fortress on top of the exploration pile.",
     "rarity": "normal",
     "flavourText": "Neither elves, nor goblins can ever hope to enter."
 }

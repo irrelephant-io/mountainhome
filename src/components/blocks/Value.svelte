@@ -45,7 +45,6 @@
         }
     }
 
-    
     .icon {
         position: absolute;
         left: 50%;
@@ -70,7 +69,7 @@
     .value {
         position: absolute;
         font-family: 'Farsan';
-        font-weight: 700;
+        font-weight: bold;
         position: absolute;
         transform: translate(-5%, -5%);
         top: 0;

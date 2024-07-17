@@ -1,7 +1,8 @@
 <script lang="ts">
-    import { text } from "@sveltejs/kit";
-import RichText from "./RichText.svelte";
-
+    import type { Rarity } from "$lib/Rarity";
+    import RichText from "./RichText.svelte";
+    
+    export let rarity: Rarity;
     export let mainText: string | undefined;
     export let flavourText: string | undefined;
     export let cardType: string;
@@ -9,23 +10,23 @@ import RichText from "./RichText.svelte";
 
 <div class="box">
     {#if mainText && flavourText}
-        <div class="main round-top solid-top solid-bottom solid-sides">
+        <div class="main {rarity} round-top solid-top solid-bottom solid-sides">
             <RichText text={mainText}/>
         </div>
-        <div class="type">{cardType}</div>
-        <div class="flavour round-bottom solid-bottom solid-sides">
-            <span>"{flavourText}"</span>
+        <div class="type {rarity}">{cardType}</div>
+        <div class="flavour {rarity} round-bottom solid-bottom solid-sides">
+            <p>"{flavourText}"</p>
         </div>
     {:else if mainText}
-      <div class="main round-top round-bottom solid-top solid-bottom solid-sides">
+      <div class="main {rarity} round-top round-bottom solid-top solid-bottom solid-sides">
         <RichText text={mainText}/>
       </div>
-      <div class="type">{cardType}</div>
+      <div class="type {rarity}">{cardType}</div>
     {:else}
-        <div class="flavour round-top solid-top round-bottom solid-bottom solid-sides">
-            <span>"{flavourText}"</span>
+        <div class="flavour {rarity} full round-top solid-top round-bottom solid-bottom solid-sides">
+            <p>"{flavourText}"</p>
         </div>
-        <div class="type">{cardType}</div>
+        <div class="type {rarity}">{cardType}</div>
     {/if}
 </div>
 
@@ -36,19 +37,22 @@ import RichText from "./RichText.svelte";
         text-align: center;
         font-family: var(--alt-font-family);
         background: rgba(0, 0, 0, 0.03);
-        flex-grow: 1;
-        padding: 20px 0;
+        flex-grow: 0;
         white-space: pre-wrap;
+        padding: 5px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .flavour>span {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
+    .flavour.rare {
+        background: rgba(223, 228, 234, 0.2);
     }
-    
+
+    .flavour.full {
+        flex-grow: 1;
+    }
+
     .solid-top {
         border-top: var(--main-border);
     }
@@ -83,6 +87,10 @@ import RichText from "./RichText.svelte";
         padding: 10px;
         padding-bottom: 15px;
     }
+
+    .main.rare {
+        background: rgba(253, 238, 220, 0.8);
+    }
     
     .box {
         background: rgba(30.0, 30.0, 30.0, 0.15);
@@ -112,5 +120,9 @@ import RichText from "./RichText.svelte";
             rgba(0, 0, 0, 0.30) 99.99%,
             rgba(0, 0, 0, 0.00) 100%
         ), rgba(223, 228, 234, 1);
+    }
+
+    .type.rare {
+        background-color: var(--color-bg-rare);
     }
 </style>

@@ -1,24 +1,11 @@
 <script lang="ts">
     import type { ICard } from "../../lib/ICard";
-
     import Art from "../blocks/Art.svelte";
-    import CostTrack from "../blocks/CostTrack.svelte";
     import CardTitle from "../blocks/CardTitle.svelte";
     import TextBox from "../blocks/TextBox.svelte";
-    import ValueBox from "../blocks/ValueBox.svelte";
 
     export let definition: ICard;
 </script>
-
-{#if definition.value !== undefined}
-    <ValueBox value={definition.value} />
-{/if}
-
-{#if definition.cost !== undefined}
-    <CostTrack cost={definition.cost} />
-{/if}
-
-
 
 <main class="main-block">
     <Art uri={definition.artUri} style="extended"/>
@@ -30,6 +17,7 @@
         mainText={definition.mainText}
         flavourText={definition.flavourText}
         cardType={definition.type}
+        rarity={definition.rarity}
     />
 </main>
 
@@ -41,3 +29,4 @@
         height: 100%;
     }
 </style>
+

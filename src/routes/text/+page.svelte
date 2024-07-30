@@ -21,6 +21,6 @@
 <p>Rendered text would be:</p>
 
 <div style="width: 300px; height: 400px; border: 1px solid; padding: 10px; background: grey">
-    <TextBox cardType={type} mainText={text} flavourText={flavour}/>
+    <TextBox cardType={type} mainText={text} flavourText={flavour} rarity="normal"/>
 </div>
 

@@ -9,8 +9,8 @@
         --color-bg-rare: #ffe8ae;
     }
 
-    body {
-        font-family: var(--main-font-family);
+    * {
+        font: normal 16px var(--main-font-family);
     }
 </style>
 

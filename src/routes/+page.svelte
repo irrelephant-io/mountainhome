@@ -1,1 +1,1 @@
-Use top navigation to inspect components!
+<p>Use top navigation to inspect components!</p>

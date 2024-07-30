@@ -6,7 +6,7 @@ export default defineConfig({
 		host: "::1",
 		fs: {
 			allow: [
-				"static/data"
+				"static/"
 			]
 		}
 	},

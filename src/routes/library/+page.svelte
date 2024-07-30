@@ -1,14 +1,15 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import Card from "../../components/Card.svelte";
-    import cards from "$data/cards/index.json";
     import type { ICard } from "$lib/ICard";
 
     const basePath = "data/cards";
-    let cardDetails: (ICard|undefined)[] = new Array(cards.length).fill(undefined);
+    let cardDetails: (ICard|undefined)[] = [];
 
     onMount(async function() {
-        cards.forEach((path, index) => {
+        const indexContent = await fetch(basePath + "/index.json").then(it => it.json());
+        cardDetails = new Array(indexContent.length).fill(undefined);
+        indexContent.forEach((path: string, index: number) => {
         fetch(basePath + "/" + path)
             .then(it => it.json())
             .then(json => cardDetails = cardDetails.with(index, json));
@@ -16,7 +17,12 @@
     });
 </script>
 
-<p>There are currently {cards.length} cards in the index.</p>
+{#if cardDetails.length === 0} 
+    <p>Loading index...</p>
+{:else}
+    <p>There are currently {cardDetails.length} cards in the index.</p>
+{/if}
+
 <div class="cards">
     {#each cardDetails as card}
         {#if card !== undefined}

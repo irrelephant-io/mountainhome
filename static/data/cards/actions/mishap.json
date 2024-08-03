@@ -1,0 +1,8 @@
+{
+    "title": "Logistical Mishap",
+    "type": "Action",
+    "layout": "fullText",
+    "mainText": "{kw:On Bid} — When the bid has been concluded, instead of every player discarding their bidding pool, collect all non-dwarf cards and randomly and evenly distribute it between all participating players. Put all Dwarf cards into their respective owner's discard piles.",
+    "rarity": "normal",
+    "flavourText": "There appears to have been an issue delivering back the latest tribute."
+}

@@ -3,6 +3,7 @@
     import CostTrack from "./blocks/CostTrack.svelte";
     import ValueBox from "./blocks/ValueBox.svelte";
     import ExtendedArt from "./layouts/ExtendedArt.svelte";
+    import FullText from "./layouts/FullText.svelte";
     import Normal from "./layouts/Normal.svelte";
 
     export let definition: ICard;
@@ -28,8 +29,10 @@
 
         {#if definition.layout === "extendedArt"}
             <ExtendedArt definition={definition}/>
-        {:else if definition.layout == "normal"}
+        {:else if definition.layout === "normal"}
             <Normal definition={definition}/>
+        {:else if definition.layout === "fullText"}
+            <FullText definition={definition}/>
         {:else}
             <p>Unknown Layout!</p>
         {/if}

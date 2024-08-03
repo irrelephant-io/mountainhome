@@ -1,0 +1,9 @@
+{
+    "title": "Dragon Attack!",
+    "type": "Event",
+    "watermark": "recurring",
+    "layout": "fullText",
+    "mainText": "{kw:Effect} After your draw step, you may discard a Dwarf card and add one counter to this event. If you don't, remove one construction step from one of your buildings (finished or not).{n}{n}{kw:Resolve}{r:vp=2} — trash this card and search the exploration pile for a Dragon Lair, then put it into play.",
+    "rarity": "normal",
+    "flavourText": "The great and feared dragon Fafnir who once was a dwarf before he became a dragon; now attacks every time after partying with the goblins and Thorvald. - Ymir, the Elder Brewer"
+}

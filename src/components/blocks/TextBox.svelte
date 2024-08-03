@@ -1,8 +1,11 @@
 <script lang="ts">
     import type { Rarity } from "$lib/Rarity";
+    import type { Watermark } from "$lib/Watermark";
     import RichText from "./RichText.svelte";
+    import WatermarkBlock from "./WatermarkBlock.svelte";
     
     export let rarity: Rarity;
+    export let watermark: Watermark | undefined;
     export let mainText: string | undefined;
     export let flavourText: string | undefined;
     export let cardType: string;
@@ -12,6 +15,9 @@
     {#if mainText && flavourText}
         <div class="main {rarity} round-top solid-top solid-bottom solid-sides">
             <RichText text={mainText}/>
+            {#if watermark !== undefined}
+                <WatermarkBlock watermark={watermark}/>
+            {/if}
         </div>
         <div class="type {rarity}">{cardType}</div>
         <div class="flavour {rarity} round-bottom solid-bottom solid-sides">
@@ -20,6 +26,9 @@
     {:else if mainText}
       <div class="main {rarity} round-top round-bottom solid-top solid-bottom solid-sides">
         <RichText text={mainText}/>
+        {#if watermark !== undefined}
+            <WatermarkBlock watermark={watermark}/>
+        {/if}
       </div>
       <div class="type {rarity}">{cardType}</div>
     {:else}
@@ -78,6 +87,7 @@
 
     .main {
         background-color: white;
+        position: relative;
         flex: 2.5;
         color: #000;
         font-size: 12px;

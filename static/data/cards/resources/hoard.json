@@ -1,0 +1,8 @@
+{
+    "title": "Dragon Hoard",
+    "type": "Treasure - Loot",
+    "artUri": "art/cards/resources/hoard.png",
+    "layout": "extendedArt",
+    "rarity": "rare",
+    "mainText": "{kw:Trash} — Draw a card, add 3 of any one resource."
+}

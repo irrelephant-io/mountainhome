@@ -1,10 +1,10 @@
 <script lang="ts" context="module">
     type ComponentDescriptor = {
-        type: "resource" | "newline" | "unknown",
+        type: "resource" | "newline" | "keyword" | "unknown",
         props?: any
     };
 
-    const specialBlockSyntaxPattern = /{(?<type>r|n):?(?<desc>(?<spec>\w+)=(?<value>[\w\+]+))?}/gm;
+    const specialBlockSyntaxPattern = /{(?<type>r|n|kw):?(?<desc>(?<spec>(\w|\s)+)(=(?<value>[\w\+]+))?)?}/gm;
 
     function getSpecialComponentDescriptor(match: RegExpExecArray): ComponentDescriptor {
         if (match.groups!["type"] === "r") {
@@ -20,6 +20,15 @@
         if (match.groups!["type"] == "n") {
             return {
                 type: "newline"
+            }
+        }
+
+        if (match.groups!["type"] == "kw") {
+            return {
+                type: "keyword",
+                props: {
+                    word: match.groups!["spec"]
+                }
             }
         }
 
@@ -43,8 +52,6 @@
         });
     
     parts.push(text.substring(lastIndex));
-
-    console.log(parts);
 </script>
 
 {#each parts as component}
@@ -52,6 +59,8 @@
         <span class="text-bit">{component}</span>
     {:else if component.type === "resource"}
         <div class="icon-holder"><Value {...component.props}/></div>
+    {:else if component.type === "keyword"}
+        <span class="keyword">{component.props.word} </span>
     {:else if component.type === "newline"}
         <br/>
     {:else}
@@ -71,6 +80,10 @@
 
     .text-bit {
         font-family: var(--main-font-family);
+    }
+
+    .keyword {
+        font-style: italic;
     }
 
 </style>

@@ -7,7 +7,7 @@
     let cardDetails: (ICard|undefined)[] = [];
 
     onMount(async function() {
-        const indexContent = await fetch(basePath + "/index.json").then(it => it.json());
+        const indexContent = await fetch(basePath + "/_index.json").then(it => it.json());
         cardDetails = new Array(indexContent.length).fill(undefined);
         indexContent.forEach((path: string, index: number) => {
         fetch(basePath + "/" + path)

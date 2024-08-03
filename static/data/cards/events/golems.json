@@ -1,0 +1,9 @@
+{
+    "title": "Rock Golem Debt Collectors",
+    "type": "Event",
+    "watermark": "recurring",
+    "layout": "fullText",
+    "mainText": "{kw:Effect} — When you draw any Rocks ({r:rocks=x}) treasure card, choose one:{n}- trash it and add one counter to this event;{n}- discard it.{n}{n}{kw:Resolve}{r:vp=1} — trash this card.",
+    "rarity": "normal",
+    "flavourText": "We have suffered your pecking at our backs long enough! Now is the time to pay back the debt in blood. Golem blood! - Rock Golems"
+}

@@ -1,0 +1,8 @@
+{
+    "title": "Faulty Minecarts",
+    "type": "Action",
+    "layout": "fullText",
+    "mainText": "{kw:On Bid} — Each player chooses up to three resource cards in their bidding pool. Put all not chosen resource cards into their owner's discard piles.",
+    "rarity": "normal",
+    "flavourText": "I did forget to grease the wheels before the operation began, but I blame it on Thorvald. - Tobias the Labourer"
+}

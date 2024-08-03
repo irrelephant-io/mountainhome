@@ -1,0 +1,9 @@
+{
+    "title": "Wizard Auctioneer",
+    "type": "Action",
+    "watermark": "troll",
+    "layout": "fullText",
+    "mainText": "Choose a building. Players bid Shinies ({r:shinies=x}) — place chosen building in the winner's town.",
+    "rarity": "normal",
+    "flavourText": "They seemed a friendly sort until we learned the wizard was in debt to Karina"
+}

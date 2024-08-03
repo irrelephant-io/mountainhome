@@ -1,0 +1,9 @@
+{
+    "title": "Mountain Goat Consultants",
+    "type": "Event",
+    "watermark": "recurring",
+    "layout": "fullText",
+    "mainText": "{kw:Effect} — Whenever you buy a blueprint, you may pay {r:shinies=4} and add one counter to this event. If you do, immediately place the bought blueprint in your town and add one construction progress to it.{n}{n}{kw:Resolve}{r:vp=1} — trash this card.",
+    "rarity": "normal",
+    "flavourText": "Isn't it surprising that the mountain goats of Rotheim know so much about building? They don't even mine! - Kartok, the Elder Stonemason."
+}

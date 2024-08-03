@@ -9,6 +9,6 @@
         background: var(--uri);
         position: relative;
         background-repeat: round;
-        height: 190px;
+        height: 290px;
     }
 </style>

@@ -1,0 +1,8 @@
+{
+    "title": "Strategic Piling",
+    "type": "Action",
+    "layout": "fullText",
+    "mainText": "Next Rocks ({r:rocks=x}) card you play instead adds Shinies ({r:shinies=x}).{n}{kw:On Bid} — One Rocks ({r:rocks=x}) card in your bidding pool is considered as Shinies ({r:shinies=x}).",
+    "rarity": "normal",
+    "flavourText": "By dumping the rocks underneath a thin layer of gold nuggets we are able to save a lot of money! Nobody is checking those mine carts anyway! - Loki, the Scoundrel."
+}

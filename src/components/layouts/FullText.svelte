@@ -1,6 +1,5 @@
 <script lang="ts">
     import type { ICard } from "../../lib/ICard";
-    import ExtendedArt from "../blocks/ExtendedArt.svelte";
     import CardTitle from "../blocks/CardTitle.svelte";
     import TextBox from "../blocks/TextBox.svelte";
 
@@ -8,7 +7,6 @@
 </script>
 
 <main class="main-block">
-    <ExtendedArt uri={definition.artUri}/>
     <CardTitle
         title={definition.title}
         rarity={definition.rarity}
@@ -30,4 +28,3 @@
         height: 100%;
     }
 </style>
-

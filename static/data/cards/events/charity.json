@@ -1,0 +1,8 @@
+{
+    "title": "Dwarven Grace Charity",
+    "type": "Event",
+    "layout": "fullText",
+    "mainText": "For each player in turn order: Reveal cards from the top of the exploration pile until you reveal a resource card then add the revealed card to your hand. After all players have done this, shuffle the exploration pile.",
+    "rarity": "normal",
+    "flavourText": "I don't like this charity. Where did they get all their stuff from anyway? - Alisa, the Underpaid Dwarven Labourer."
+}

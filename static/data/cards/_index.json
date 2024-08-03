@@ -12,6 +12,8 @@
     "./resources/shinies/shinies-3.json",
     "./resources/shinies/shinies-4.json",
 
+    "./resources/hoard.json",
+
     "./dwarves/normal/tobias.json",
     "./dwarves/normal/erik.json",
     "./dwarves/normal/alisa.json",
@@ -49,5 +51,24 @@
     "./buildings/projects/garden.json",
     "./buildings/projects/vault.json",
     "./buildings/projects/tavern.json",
-    "./buildings/projects/adventurers.json"
+    "./buildings/projects/adventurers.json",
+
+    "./actions/panda.json",
+    "./actions/minecarts.json",
+    "./actions/fools.json",
+    "./actions/ygg.json",
+    "./actions/politics.json",
+    "./actions/mishap.json",
+    "./actions/wizard.json",
+    "./actions/piling.json",
+
+    "./events/consultants.json",
+    "./events/dragon.json",
+    "./events/goblins.json",
+    "./events/golems.json",
+    "./events/charity.json",
+    "./events/reorganisation.json",
+    "./events/party.json",
+
+    "./hangover.json"
 ]

@@ -3,7 +3,7 @@
     "type": "Legendary Dwarf",
     "artUri": "art/cards/dwarves/legendary/ori.png",
     "layout": "normal",
-    "mainText": "Draw two cards.{n}On Bid: put top two cards of your draw pile into your bidding pool.",
+    "mainText": "Draw two cards.{n}{kw:On Bid} — put top two cards of your draw pile into your bidding pool.",
     "rarity": "rare",
     "flavourText": "The only Drawf in existence who knows exactly where his helmet is at all times.",
     "value": {

@@ -1,0 +1,8 @@
+{
+    "title": "Fool's Gold",
+    "type": "Action",
+    "layout": "fullText",
+    "mainText": "{kw:On Bid} — Choose any Shinies ({r:shinies=x}) treasure card. It's value is considered as Rocks ({r:rocks=x}) in the bid.",
+    "rarity": "normal",
+    "flavourText": "It turns out that not everything that glitters is gold! Some of it could be regular pebbles and stones."
+}

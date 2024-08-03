@@ -1,0 +1,9 @@
+{
+    "title": "Goblin Raiding Party",
+    "type": "Event",
+    "watermark": "recurring",
+    "layout": "fullText",
+    "mainText": "{kw:Effect} — After your draw step, add one counter to this event and choose one:{n}- tap a building in your town;{n}- discard the highest value resource card from your hand, if you have any;{n}- pay {r:booze=1}.{n}{n}{kw:Resolve}{r:vp=1} — trash this card.",
+    "rarity": "normal",
+    "flavourText": "Why do the green rapscallions keep stealing my damn Cider?! -Karina, The Bewitching Witch."
+}

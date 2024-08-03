@@ -1,0 +1,9 @@
+{
+    "title": "Reorganisation",
+    "type": "Event",
+    "watermark": "recurring",
+    "layout": "fullText",
+    "mainText": "{kw:Effect} — After your draw step, add one counter to this event. Draw up to three cards and then put that many cards on top of your draw pile.{n}{n}{kw:Resolve}{r:vp=2} — trash this card.",
+    "rarity": "normal",
+    "flavourText": "Sometimes you have all the nails in the world, but none of the hammers. - Marg, the Legendary Smith"
+}

@@ -3,7 +3,7 @@
     "type": "Legendary Dwarf",
     "artUri": "art/cards/dwarves/legendary/tapfa.png",
     "layout": "normal",
-    "mainText": "On Bid: All rocks ({r:rocks=x}) in your bidding pool are considered as shinies ({r:shinies=x}).",
+    "mainText": "{kw:On Bid} — All rocks ({r:rocks=x}) in your bidding pool are considered as shinies ({r:shinies=x}).",
     "rarity": "rare",
     "flavourText": "Nobody knows what she is doing in the woods alone, but she is very lucky when it comes to scavenging for gold.",
     "value": {

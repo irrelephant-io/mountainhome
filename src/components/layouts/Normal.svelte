@@ -15,6 +15,7 @@
     />
     <TextBox
         mainText={definition.mainText}
+        watermark={definition.watermark}
         flavourText={definition.flavourText}
         cardType={definition.type}
         rarity={definition.rarity}

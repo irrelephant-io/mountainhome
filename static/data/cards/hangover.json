@@ -1,0 +1,12 @@
+{
+    "title": "Hangover",
+    "type": "Status",
+    "artUri": "art/cards/hangover.png",
+    "layout": "extendedArt",
+    "value": {
+        "resource": "vp",
+        "value": -1
+    },
+    "rarity": "normal",
+    "flavourText": "Sometimes great nights lead to great headaches during the day."
+}

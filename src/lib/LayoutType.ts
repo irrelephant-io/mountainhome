@@ -1,1 +1,1 @@
-export type LayoutType = "event" | "normal" | "extendedArt";
+export type LayoutType = "normal" | "extendedArt" | "fullText";

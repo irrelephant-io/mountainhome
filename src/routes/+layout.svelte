@@ -12,14 +12,16 @@
     * {
         font: normal 16px var(--main-font-family);
     }
+
+    nav {
+        text-align: center;
+    }
 </style>
 
 <nav>
     <a href="/">home</a>
     |
     <a href="/card-builder">card builder</a>
-    |
-    <a href="/library">library</a>
     |
     <a href="/cost">cost</a>
     |

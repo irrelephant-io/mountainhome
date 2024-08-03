@@ -1,0 +1,7 @@
+{
+    "title": "Mountain Goat Building Co.",
+    "type": "Helper",
+    "layout": "helper",
+    "rarity": "normal",
+    "mainText": "Buy building blueprints here during your action step (one per turn).{n}{n}{r:shinies=3} for Basic Buildings{n}{n}{r:shinies=4} for Advanced Buildings{n}{n}{r:shinies=5} for Unique Projects{n}{n}{n}Restock the shop with next card in the shop pile."
+}

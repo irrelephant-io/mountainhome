@@ -70,5 +70,8 @@
     "./events/reorganisation.json",
     "./events/party.json",
 
-    "./hangover.json"
+    "./hangover.json",
+
+    "./helpers/turn.json",
+    "./helpers/goats.json"
 ]

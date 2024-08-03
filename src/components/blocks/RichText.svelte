@@ -4,26 +4,27 @@
         props?: any
     };
 
-    const specialBlockSyntaxPattern = /{(?<type>r|n|kw):?(?<desc>(?<spec>(\w|\s)+)(=(?<value>[\w\+]+))?)?}/gm;
+    const specialBlockSyntaxPattern = /{(?<type>r|n|kw|R):?(?<desc>(?<spec>(\w|\s)+)(=(?<value>[\w\+]+))?)?}/gm;
 
     function getSpecialComponentDescriptor(match: RegExpExecArray): ComponentDescriptor {
-        if (match.groups!["type"] === "r") {
+        const type = match.groups!["type"];
+        if (type === "r" || type === "R") {
             return {
                 type: "resource",
                 props: {
-                    style: "small",
+                    style: type === "r" ? "small" : "big",
                     value: { resource: match.groups!["spec"], value: match.groups!["value"] }
                 }
             };
         }
 
-        if (match.groups!["type"] == "n") {
+        if (type == "n") {
             return {
                 type: "newline"
             }
         }
 
-        if (match.groups!["type"] == "kw") {
+        if (type == "kw") {
             return {
                 type: "keyword",
                 props: {

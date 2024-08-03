@@ -1,0 +1,7 @@
+{
+    "title": "During Your Turn",
+    "type": "Helper",
+    "layout": "helper",
+    "rarity": "normal",
+    "mainText": "ACTION STEP{n}- play Dwarves;{n}- place blueprints;{n}- construct buildings;{n}- buy blueprints (one per turn);{n}{n}EXPLORATION STEP{n}- reveal top card of exploration pile;{n}- resolve or add it to your discard pile;{n}{n}PREPARE FOR NEXT TURN{n}- discard your hand;{n}- untap buildings;{n}- draw new hand;"
+}

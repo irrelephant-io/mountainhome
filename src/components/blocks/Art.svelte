@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let uri: string;
+    export let uri: string | undefined;
 </script>
 
 

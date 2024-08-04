@@ -1,4 +1,5 @@
-# Mountainhome
+# Mountainhome [![Build and Deploy to Azure](https://github.com/irrelephant-io/mountainhome/actions/workflows/publish.yml/badge.svg)](https://github.com/irrelephant-io/mountainhome/actions/workflows/publish.yml)
+
 *Welcome, bearded traveller!*
 
 *Let me tell you the tale of the weary wandering dwarves, roaming the land to find the perfect place to put their roots down. Are you the dwarven leader to unite them all? Leave your pickaxe by the chest, sit down by the crackling fire and get a mug of our own foamy ale. Revel at the treasures we have amassed.*

@@ -11,7 +11,7 @@
     
     const iconLookup = {
         "vp": `${document.baseURI}icons/vp.png`,
-        "shinies": `${document.baseURI}icons/shinie.png`,
+        "shinies": `${document.baseURI}icons/shinies.png`,
         "rocks": `${document.baseURI}icons/rock.png`,
         "mixed": `${document.baseURI}icons/mixed.png`,
         "booze": `${document.baseURI}icons/booze.png`

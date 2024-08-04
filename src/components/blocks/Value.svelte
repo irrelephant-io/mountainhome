@@ -2,18 +2,20 @@
     import type { IValue } from "../../lib/Value.ts";
     export type ValueStyle = "big" | "small";
 
-    const iconLookup = {
-        "vp": "/icons/vp.png",
-        "shinies": "/icons/shinies.png",
-        "rocks": "/icons/rock.png",
-        "mixed": "/icons/mixed.png",
-        "booze": "/icons/booze.png"
-    };
+
 </script>
 
 <script lang="ts">
     export let value: IValue;
     export let style: ValueStyle = "small";
+    
+    const iconLookup = {
+        "vp": `${document.baseURI}icons/vp.png`,
+        "shinies": `${document.baseURI}icons/shinie.png`,
+        "rocks": `${document.baseURI}icons/rock.png`,
+        "mixed": `${document.baseURI}icons/mixed.png`,
+        "booze": `${document.baseURI}icons/booze.png`
+    };
 
     function getIcon(value: IValue): string {
         const result = iconLookup[value.resource];

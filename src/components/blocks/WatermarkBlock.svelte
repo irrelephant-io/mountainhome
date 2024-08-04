@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Watermark } from "$lib/Watermark";
     export let watermark: Watermark;
-    const uri = `watermarks/${watermark}.png`;
+    const uri = `${document.baseURI}watermarks/${watermark}.png`;
 </script>
 
 <div class="watermark" style='--uri: url("{uri}");'/>

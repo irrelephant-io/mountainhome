@@ -15,15 +15,18 @@
 </div>
 
 <style>
+    :root {
+        --cost-block-size-mm: 8.4;
+        --cost-block-size: calc(var(--cost-block-size-mm) * var(--dpi-factor) * 1px);
+    }
     .box {
-        width: 44px;
-        height: 44px;
-        background-color: #DFE4EA;
+        width: var(--cost-block-size);
+        height: var(--cost-block-size);
         position: absolute;
         top: 5px;
         left: 5px;
         z-index: 2;
-        border-radius: 20px 5px;
+        border-radius: 45% 15%;
         border: 1px solid #000;
         background: linear-gradient(
             218deg,

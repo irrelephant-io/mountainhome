@@ -8,10 +8,16 @@
 <div class="art" style='--uri: url("{makeAbsolute(uri)}");'/>
 
 <style lang="css">
+    :root {
+        --art-height-mm: 36;
+        --art-height: calc(var(--art-height-mm) * var(--dpi-factor) * 1px);
+    }
+
     .art {
         background: var(--uri);
+        height: var(--art-height);
         position: relative;
         background-repeat: round;
-        height: 190px;
+        background-size: cover;
     }
 </style>

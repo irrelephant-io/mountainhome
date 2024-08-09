@@ -1,0 +1,12 @@
+{
+    "title": "Smoked Forgefire Whisky",
+    "type": "Treasure - Booze",
+    "artUri": "art/cards/resources/booze/booze-42.png",
+    "layout": "extendedArt",
+    "rarity": "rare",
+    "flavourText": "Distilled in enchanted copper pots over the raging fire of the greatest forge known to dwarvenkind. A single drop will make you mine non-stop for days.",
+    "value": {
+        "resource": "booze",
+        "value": 4
+    }
+}

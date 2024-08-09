@@ -40,6 +40,11 @@
 </div>
 
 <style lang="css">
+    :root {
+        --type-box-height-mm: 2.9;
+        --type-box-height: calc(var(--type-box-height-mm) * var(--dpi-factor) * 1px);
+    }
+
     .flavour {
         position: relative;
         font-size: 12px;
@@ -90,10 +95,10 @@
         position: relative;
         flex: 2.5;
         color: #000;
-        font-size: 12px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 400;
-        line-height: 15px;
+        line-height: 1.6;
         padding: 10px;
         padding-bottom: 15px;
     }
@@ -112,16 +117,16 @@
     
     .type {
         position: relative;
-        margin: -9px auto;
-        height: 15px;
+        margin: calc(var(--type-box-height) * -0.5) auto;
+        height: var(--type-box-height);
+        border-radius: var(--type-box-height);
         text-transform: uppercase;
-        width: 180px;
+        width: 60%;
         text-align: center;
         background-repeat: round;
         border: 1px solid black;
-        border-radius: 15px;
-        font-size: 12px;
-        font-weight: bold;
+        font-size: calc(var(--type-box-height) * 0.75);
+        font-weight: 700;
         z-index: 1;
         background: linear-gradient(
             180deg,

@@ -26,7 +26,9 @@
 <div class="cards">
     {#each cardDetails as card}
         {#if card !== undefined}
-            <Card definition={card}/>
+            <div class="card-holder">
+                <Card definition={card}/>
+            </div>
         {:else}
             <div class="placeholder">Loading...</div>
         {/if}
@@ -40,7 +42,7 @@
         flex-wrap: wrap;
     }
 
-    .cards>.placeholder {
+    .placeholder {
         width: 335px;
         height: 468px;
     }

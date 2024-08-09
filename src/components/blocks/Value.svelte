@@ -6,83 +6,43 @@
 </script>
 
 <script lang="ts">
+    import Icon from "./Icon.svelte";
+
     export let value: IValue;
     export let style: ValueStyle = "small";
-    
-    const iconLookup = {
-        "vp": `${document.baseURI}icons/vp.png`,
-        "shinies": `${document.baseURI}icons/shinies.png`,
-        "rocks": `${document.baseURI}icons/rock.png`,
-        "mixed": `${document.baseURI}icons/mixed.png`,
-        "booze": `${document.baseURI}icons/booze.png`
-    };
-
-    function getIcon(value: IValue): string {
-        const result = iconLookup[value.resource];
-        return result || "/icons/unknown.png";
-    }
-
 </script>
 
 <div class="box {style}">
-    <div class="icon {style}" style="--icon: url('{getIcon(value)}')" />
+    <Icon type={value.resource} size={style == "small" ? 3 : 6}></Icon>
     {#if value.value !== '_'}
         <span class="value {style}">{value.value}</span>
     {/if}
 </div>
 
 <style lang="css">
-    .box {
-        display: inline-block;
-        position: relative;
+    :root {
+        --large-value-size-mm: 7.2;
+        --small-value-size-mm: 3.8;
+        --large-text-size-mm: 3.2;
+        --small-text-size-mm: 2.2;
 
-        &.big {
-            width: 38px;
-            height: 38px;
-        }
-
-        &.small {
-            width: 20px;
-            height: 20px;
-        }
+        --large-value-size: calc(var(--large-value-size-mm) * var(--dpi-factor) * 1px);
+        --small-value-size: calc(var(--small-value-size-mm) * var(--dpi-factor) * 1px);
     }
-
-    .icon {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        display: inline-block;
-        background: var(--icon) no-repeat center;
-        background-size: contain;
-
-        &.small {
-            width: 14px;
-            height: 14px;
-            transform: translate(-65%, -40%);
-        }
-
-        &.big {
-            width: 28px;
-            height: 28px;
-            transform: translate(-50%, -40%);
-        }
-    }
-
     .value {
         position: absolute;
         font-family: 'Farsan';
         font-weight: bold;
         position: absolute;
-        transform: translate(-5%, -5%);
-        top: 0;
+        top: -20%;
         right: 0;
-
+        font-weight: bold;
         &.small {
-           font-size: 12px;
+           font-size: calc(var(--small-text-size-mm) * var(--dpi-factor) * 1px);
         }
 
         &.big {
-            font-size: 17px;
+            font-size: calc(var(--large-text-size-mm) * var(--dpi-factor) * 1px);
         }
     }
 </style>

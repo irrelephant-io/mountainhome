@@ -62,6 +62,7 @@
     }
 
     .card-holder {
+        scale: 0.5;
         display: flex;
         width: 50%;
         align-items: center;

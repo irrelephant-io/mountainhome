@@ -1,0 +1,6 @@
+:global(:root) {
+    --target-dpi: 300;
+    --mm-per-inch: 25.4;
+
+    --dpi-factor: calc(var(--target-dpi) / var(--mm-per-inch))
+}

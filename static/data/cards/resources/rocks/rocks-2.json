@@ -4,7 +4,7 @@
     "artUri": "art/cards/resources/rocks/rocks-2.png",
     "layout": "extendedArt",
     "rarity": "normal",
-    "flavourText": "Solid, Loyal and Perfect. Any dwarfs favourite building material!\n- Riani Smedson.",
+    "flavourText": "Solid, Loyal and Perfect. Any Dwarf's favourite building material!\n- Riani Smedson.",
     "value": {
         "resource": "rocks",
         "value": 2

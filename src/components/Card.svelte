@@ -11,60 +11,75 @@
 </script>
 
 <div class="card">
-    <div class="inner {definition.rarity}">
-        <header>
-            {#if definition.value !== undefined}
-                <ValueBox 
-                    rarity={definition.rarity}
-                    value={definition.value}
-                />
-            {/if}
+    <div class="outer">
+        <div class="inner {definition.rarity}">
+            <header>
+                {#if definition.value !== undefined}
+                    <ValueBox 
+                        rarity={definition.rarity}
+                        value={definition.value}
+                    />
+                {/if}
 
-            {#if definition.cost !== undefined}
-                <CostTrack 
-                    rarity={definition.rarity}
-                    cost={definition.cost}
-                />
-            {/if}
-        </header>
+                {#if definition.cost !== undefined}
+                    <CostTrack 
+                        rarity={definition.rarity}
+                        cost={definition.cost}
+                    />
+                {/if}
+            </header>
 
-        {#if definition.layout === "extendedArt"}
-            <ExtendedArt definition={definition}/>
-        {:else if definition.layout === "normal"}
-            <Normal definition={definition}/>
-        {:else if definition.layout === "fullText"}
-            <FullText definition={definition}/>
-        {:else if definition.layout === "helper"}
-            <Helper definition={definition}/>
-        {:else}
-            <p>Unknown Layout!</p>
-        {/if}
+            {#if definition.layout === "extendedArt"}
+                <ExtendedArt definition={definition}/>
+            {:else if definition.layout === "normal"}
+                <Normal definition={definition}/>
+            {:else if definition.layout === "fullText"}
+                <FullText definition={definition}/>
+            {:else if definition.layout === "helper"}
+                <Helper definition={definition}/>
+            {:else}
+                <p>Unknown Layout!</p>
+            {/if}
+        </div>
     </div>
 </div>
 
 <style>
-    .card {
-        width: 315px;
-        height: 448px;
+    :root {
+        --width-mm: 63.5;
+        --height-mm: 88.9;
+        --border-mm: 2;
+
+        --width: calc(var(--width-mm) * var(--dpi-factor) * 1px);
+        --height: calc(var(--height-mm) * var(--dpi-factor) * 1px);
+        --padding: calc(var(--border-mm) * var(--dpi-factor) * 1px);
+    }
+
+    .outer {
+        width: var(--width);
+        height: var(--height);
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: var(--padding);
         background: black;
-        color: white;
-        padding: 10px;
-        color: black;
         font-family: 'Donegal One'
     }
 
     .inner {
-        padding: 10px;
         position: relative;
-        height: calc(100% - 20px);
+        width: 100%;
+        height: 100%;
         background: linear-gradient(
             to top,
             rgba(164, 176, 190, 0.5),
             rgba(164, 176, 190, 0.3)),
             url('/art/normal-bg.png'
         ) no-repeat top center;
-        background-size:  cover;
-        border-radius: 15px;
+        background-size: inherit;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border-radius: 30px;
+        padding: var(--padding);
         display: flex;
         flex-direction: column;
     }

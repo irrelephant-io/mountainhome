@@ -8,11 +8,16 @@
 <div class="name box {rarity}">{title}</div>
 
 <style lang="css">
+    :root {
+        --title-height-mm: 5;
+        --title-height: calc(var(--title-height-mm) * var(--dpi-factor) * 1px);
+    }
+
     .name {
-        line-height: 30px;
+        height: var(--title-height);
+        line-height: var(--title-height);
         position: relative;
-        height: 30px;
-        font-size: 15px;
+        font-size: 30px;
         font-weight: 700;
     }
     
@@ -25,7 +30,7 @@
             rgba(0, 0, 0, 0.00) 100%
         ),rgba(223, 228, 234, 0.60);
         border: 1px solid black;
-        border-radius: 15px;
+        border-radius: calc(var(--title-height) / 2);
         padding: 0 15px;
     }
     

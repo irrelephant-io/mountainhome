@@ -3,7 +3,7 @@
     "type": "Unique Building",
     "artUri": "art/cards/buildings/unique/dungeon.png",
     "layout": "normal",
-    "mainText": "You may put up to one action card into the dark dungeon face down. That action card may be used as if it was in your hand.",
+    "mainText": "{r:shinies=2}, tap: Put a card from your discard pile on top of your draw pile.",
     "rarity": "normal",
     "flavourText": "The cost of preparedness - measured now in gold, later in blood. - Unknown",
     "value": {

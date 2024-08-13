@@ -41,19 +41,40 @@
 
 <style lang="css">
     :root {
+        --type-box-vertical-offset-mm: 1;
+        --type-box-vertical-offset: calc(var(--type-box-vertical-offset-mm) * var(--dpi-factor) * 1px);
+        --type-box-width-mm: 35;
+        --type-box-width: calc(var(--type-box-width-mm) * var(--dpi-factor) * 1px);
+
+        --text-box-border-radius-mm: 2.5;
+        --text-box-border-radius: calc(var(--text-box-border-radius-mm) * var(--dpi-factor) * 1px);
+        --text-box-font-size-mm: 2.5;
+        --text-box-font-size: calc(var(--text-box-font-size-mm) * var(--dpi-factor) * 1px);
         --type-box-height-mm: 2.9;
         --type-box-height: calc(var(--type-box-height-mm) * var(--dpi-factor) * 1px);
+        
+        --main-text-padding-sides-mm: 1.7;
+        --main-text-padding-sides: calc(var(--main-text-padding-sides-mm) * var(--dpi-factor) * 1px);
+        --main-text-padding-top-mm: 1.2;
+        --main-text-padding-top: calc(var(--main-text-padding-top-mm) * var(--dpi-factor) * 1px);
+
+        --flavour-padding-sides-mm: 2;
+        --flavour-padding-top-mm: 0.5;
+        --flavour-padding-bottom-mm: 1;
+        --flavour-padding-sides: calc(var(--flavour-padding-sides-mm) * var(--dpi-factor) * 1px);
+        --flavour-padding-top: calc(var(--flavour-padding-top-mm) * var(--dpi-factor) * 1px);
+        --flavour-padding-bottom: calc(var(--flavour-padding-bottom-mm) * var(--dpi-factor) * 1px);
     }
 
     .flavour {
         position: relative;
-        font-size: 12px;
+        font-size: var(--text-box-font-size);
         text-align: center;
         font-family: var(--alt-font-family);
         background: rgba(0, 0, 0, 0.03);
         flex-grow: 0;
         white-space: pre-wrap;
-        padding: 5px 20px;
+        padding: var(--flavour-padding-top) var(--flavour-padding-sides) var(--flavour-padding-bottom) var(--flavour-padding-sides);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,13 +102,13 @@
     }
 
     .round-top {
-        border-top-left-radius: var(--main-border-radius);
-        border-top-right-radius: var(--main-border-radius);
+        border-top-left-radius: var(--text-box-border-radius);
+        border-top-right-radius: var(--text-box-border-radius);
     }
 
     .round-bottom {
-        border-bottom-left-radius: var(--main-border-radius);
-        border-bottom-right-radius: var(--main-border-radius);
+        border-bottom-left-radius: var(--text-box-border-radius);
+        border-bottom-right-radius: var(--text-box-border-radius);
     }
 
     .main {
@@ -95,12 +116,11 @@
         position: relative;
         flex: 2.5;
         color: #000;
-        font-size: 32px;
+        font-size: var(--text-box-font-size);
         font-style: normal;
         font-weight: 400;
-        line-height: 1.6;
-        padding: 10px;
-        padding-bottom: 15px;
+        line-height: 1.3;
+        padding: var(--main-text-padding-top) var(--main-text-padding-sides);
     }
 
     .main.rare {
@@ -109,19 +129,20 @@
     
     .box {
         background: rgba(30.0, 30.0, 30.0, 0.15);
-        border-radius: 15px;
+        border-radius: var(--text-box-border-radius);
         flex: 1;
         display: flex;
         flex-direction: column;
     }
     
     .type {
-        position: relative;
-        margin: calc(var(--type-box-height) * -0.5) auto;
+        position: absolute;
         height: var(--type-box-height);
         border-radius: var(--type-box-height);
         text-transform: uppercase;
-        width: 60%;
+        width: var(--type-box-width);
+        bottom: var(--type-box-vertical-offset);
+        left: calc(50% - calc(var(--type-box-width) / 2));
         text-align: center;
         background-repeat: round;
         border: 1px solid black;

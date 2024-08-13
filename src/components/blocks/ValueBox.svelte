@@ -16,6 +16,9 @@
 
 <style>
     :root {
+        --cost-block-offset-mm: 1;
+        --cost-block-offset: calc(var(--cost-block-offset-mm) * var(--dpi-factor) * 1px);
+
         --cost-block-size-mm: 8.4;
         --cost-block-size: calc(var(--cost-block-size-mm) * var(--dpi-factor) * 1px);
     }
@@ -23,8 +26,8 @@
         width: var(--cost-block-size);
         height: var(--cost-block-size);
         position: absolute;
-        top: 5px;
-        left: 5px;
+        top: var(--cost-block-offset);
+        left: var(--cost-block-offset);
         z-index: 2;
         border-radius: 45% 15%;
         border: 1px solid #000;

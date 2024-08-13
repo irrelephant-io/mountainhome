@@ -78,7 +78,7 @@
         background-size: inherit;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        border-radius: 30px;
+        border-radius: var(--padding);
         padding: var(--padding);
         display: flex;
         flex-direction: column;

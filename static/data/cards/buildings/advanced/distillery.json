@@ -3,7 +3,7 @@
     "type": "Advanced Building",
     "artUri": "art/cards/buildings/advanced/distillery.png",
     "layout": "normal",
-    "mainText": "Pay {r:booze=x}: Add {r:booze=x}{r:booze=x}{r:booze=x}.{n}During bid, add an additional {r:booze=3} to your bidding pool.",
+    "mainText": "{kw:Effect} — During bid, add an additional {r:booze=3} to your bidding pool.{n}Pay {r:booze=x}: Add {r:booze=x}{r:booze=x}{r:booze=x}.",
     "rarity": "normal",
     "flavourText": "Towers of copper and gold, shiny and clean, working day and night to avoid sobriety.",
     "value": {

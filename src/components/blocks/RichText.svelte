@@ -1,10 +1,10 @@
 <script lang="ts" context="module">
     type ComponentDescriptor = {
-        type: "resource" | "newline" | "keyword" | "unknown",
+        type: "resource" | "newline" | "keyword" | "icon" | "unknown",
         props?: any
     };
 
-    const specialBlockSyntaxPattern = /{(?<type>r|n|kw|R):?(?<desc>(?<spec>(\w|\s)+)(=(?<value>[\w\+]+))?)?}/gm;
+    const specialBlockSyntaxPattern = /{(?<type>r|n|kw|R|i):?(?<desc>(?<spec>(\w|\s)+)(=(?<value>[\w\+]+))?)?}/gm;
 
     function getSpecialComponentDescriptor(match: RegExpExecArray): ComponentDescriptor {
         const type = match.groups!["type"];
@@ -33,11 +33,26 @@
             }
         }
 
+        if (type == "i") {
+            const sizeGroup = match.groups!["value"];
+            const [ size, typographicHeight ] = sizeGroup.split("x");
+            
+            return {
+                type: "icon",
+                props: {
+                    type: match.groups!["spec"],
+                    size,
+                    typographicHeight
+                }
+            }
+        }
+
         return { type: "unknown" };
     }
 </script>
 
 <script lang="ts">
+    import Icon from "./Icon.svelte";
     import Value from "./Value.svelte";
 
     export let text: string;
@@ -64,6 +79,8 @@
         <span class="keyword">{component.props.word} </span>
     {:else if component.type === "newline"}
         <br/>
+    {:else if component.type === "icon"}
+        <div class="icon-holder"><Icon {...component.props}/></div>
     {:else}
         <span style="color: red; font-weight: bold">"-Unknown rich text component-"</span>
     {/if}

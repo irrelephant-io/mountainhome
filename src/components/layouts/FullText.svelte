@@ -21,10 +21,14 @@
 </main>
 
 <style>
+    :root {
+        --gap-mm: 2;
+        --gap: calc(var(--gap-mm) * var(--dpi-factor) * 1px);
+    }
     main.main-block {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: var(--gap);
         height: 100%;
     }
 </style>

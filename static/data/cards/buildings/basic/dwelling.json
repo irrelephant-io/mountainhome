@@ -3,7 +3,7 @@
     "type": "Basic Building",
     "artUri": "art/cards/buildings/basic/dwelling.png",
     "layout": "normal",
-    "mainText": "Pay {r:booze=1}: You may put up to one Drawf card into the Hillock Dwelling.{n}Discard the Drawf inside Hillock Dwelling: Perform that Drawf's construction action.",
+    "mainText": "{i:tap=3}, {r:booze=1}: You may put up to one Drawf card into the Hillock Dwelling.{section}Discard the Drawf inside Hillock Dwelling: Perform that Drawf's construction action.",
     "rarity": "normal",
     "flavourText": "Stand ready and hold onto your hammers and saws!",
     "value": {

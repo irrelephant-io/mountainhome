@@ -3,7 +3,7 @@
     "type": "Legendary Dwarf",
     "artUri": "art/cards/dwarves/legendary/marg.png",
     "layout": "normal",
-    "mainText": "When performing construction, Marg is able to construct up to two construction steps by paying their combined cost.",
+    "mainText": "{i:dwarf=3}: Construct up to two construction steps on your constructions by paying their combined cost.",
     "rarity": "rare",
     "flavourText": "The guy who can engineer anything given enough time and ale - Espen, the Elder of Rotheim.",
     "value": {

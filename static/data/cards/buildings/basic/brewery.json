@@ -3,7 +3,7 @@
     "type": "Basic Building",
     "artUri": "art/cards/buildings/basic/brewery.png",
     "layout": "normal",
-    "mainText": "Add {r:booze=2}.",
+    "mainText": "{i:tap=3}: Add {r:booze=2}.",
     "rarity": "normal",
     "flavourText": "The Stouthammers were renowned for its fine ales and ciders tended to its jovial Elder Brewer Ymir. - Thorvald the Event Organizer.",
     "value": {

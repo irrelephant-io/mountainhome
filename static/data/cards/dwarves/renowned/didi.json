@@ -3,7 +3,7 @@
     "type": "Renowned Dwarf",
     "artUri": "art/cards/dwarves/renowned/didi.png",
     "layout": "normal",
-    "mainText": "Add {r:shinies=2} or double the output of your mines until end of turn.",
+    "mainText": "{i:dwarf=3}: Add {r:shinies=2} or double the output of your mines until end of turn.",
     "rarity": "normal",
     "flavourText": "Digging deeply and greedily. Might be the only Drawf to have witnessed an Adamant vein - Karina, the Bewitching Witch.",
     "value": {

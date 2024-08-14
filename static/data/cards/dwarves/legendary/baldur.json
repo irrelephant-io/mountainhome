@@ -3,7 +3,7 @@
     "type": "Legendary Dwarf",
     "artUri": "art/cards/dwarves/legendary/baldur.png",
     "layout": "normal",
-    "mainText": "Choose one:{n}- look at top 5 cards of the exploration pile and put them back in any order;{n}- explore 5 times and shuffle Baldur into the exploration pile.",
+    "mainText": "{i:dwarf=3}: Choose one:{n}- look at top 5 cards of the exploration pile and put them back in any order;{n}- explore 5 times and shuffle Baldur into the exploration pile.",
     "rarity": "rare",
     "flavourText": "He went far and wide but never found a wife. - Didi, the Elder Miner",
     "value": {

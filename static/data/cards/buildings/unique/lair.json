@@ -3,7 +3,7 @@
     "type": "Unique Location",
     "artUri": "art/cards/buildings/unique/lair.png",
     "layout": "normal",
-    "mainText": "Discard a Dwarf from your hand or town: Create a Dragon's Hoard and put it on top of your draw pile. Only do this once each turn.",
+    "mainText": "Discard a Dwarf from your hand: Create a Dragon's Hoard and put it on top of your draw pile. Only do this once each turn.",
     "rarity": "rare",
     "flavourText": "At which point do you start taking all of the stolen wealth back?"
 }

@@ -2,7 +2,7 @@
     "title": "Party at the Dining Hall!",
     "type": "Event",
     "layout": "fullText",
-    "mainText": "Bid Booze ({r:booze=x}) — winner of the bid may immediately explore again. Add a Hangover card to the loser's discard pile.",
+    "mainText": "Bid Booze ({i:booze=3}) — winner of the bid may immediately explore again. Add a Hangover card to the loser's discard pile.",
     "rarity": "normal",
     "flavourText": "Partying is every dwarf's natural state. - Baldur, The Wanderer"
 }

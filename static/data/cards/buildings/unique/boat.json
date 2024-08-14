@@ -3,7 +3,7 @@
     "type": "Unique Building",
     "artUri": "art/cards/buildings/unique/boat.png",
     "layout": "normal",
-    "mainText": "Draw a card, then discard a card.",
+    "mainText": "{i:tap=3}: Draw a card, then discard a card.",
     "rarity": "normal",
     "flavourText": "One of the few means of shifting cargo along the great underground river beneath the roots of Ygg.",
     "value": {

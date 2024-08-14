@@ -3,7 +3,7 @@
     "type": "Action",
     "watermark": "troll",
     "layout": "fullText",
-    "mainText": "Choose a building. Players bid Shinies ({r:shinies=x}) — place chosen building in the winner's town.",
+    "mainText": "Choose a building.{n}Players bid Shinies ({i:shinies=3}) with owner of the chosen building adding {r:shinies=2} extra to their bidding pool — place chosen building in the winner's town.",
     "rarity": "normal",
     "flavourText": "They seemed a friendly sort until we learned the wizard was in debt to Karina"
 }

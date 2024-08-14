@@ -3,7 +3,7 @@
     "type": "Unique Building",
     "artUri": "art/cards/buildings/unique/dungeon.png",
     "layout": "normal",
-    "mainText": "{r:shinies=2}, tap: Put a card from your discard pile on top of your draw pile.",
+    "mainText": "{i:tap=3},{r:shinies=2}: Put a card from your discard pile on top of your draw pile.",
     "rarity": "normal",
     "flavourText": "The cost of preparedness - measured now in gold, later in blood. - Unknown",
     "value": {

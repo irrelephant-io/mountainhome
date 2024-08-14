@@ -3,7 +3,7 @@
     "type": "Unique Building",
     "artUri": "art/cards/buildings/unique/hall.png",
     "layout": "normal",
-    "mainText": "You may put any amount of Dwarf cards from your hand into the Clan Hall. Dwarves inside the Clan Hall can be used as if they were in your hand.",
+    "mainText": "{i:tap=3}: You may put any amount of Dwarf cards from your hand into the Clan Hall.{section}Dwarves inside the Clan Hall can be used as if they were in your hand.",
     "rarity": "normal",
     "flavourText": "Any great dwarven society needs a clan hall to show off their might and wealth. Also, it has to have an enormous dining hall with a disco ball on the ceiling! - Thorvald, the Event Organizer.",
     "value": {

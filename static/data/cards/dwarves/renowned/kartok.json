@@ -3,7 +3,7 @@
     "type": "Renowned Dwarf",
     "artUri": "art/cards/dwarves/renowned/kartok.png",
     "layout": "normal",
-    "mainText": "Add {r:rocks=3} or double the output of your quarries until end of turn.",
+    "mainText": "{i:dwarf=3}: Add {r:rocks=3} or double the output of your quarries until end of turn.",
     "rarity": "normal",
     "flavourText": "I love the guy, but I can’t get over the fact he has a pet rock. I think he calls it Clive? - Thorvald, the Event Organizer.",
     "value": {

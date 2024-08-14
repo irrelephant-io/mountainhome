@@ -3,7 +3,7 @@
     "type": "Basic Building",
     "artUri": "art/cards/buildings/basic/mine.png",
     "layout": "normal",
-    "mainText": "Add {r:shinies=2}.",
+    "mainText": "{i:tap=3}: Add {r:shinies=2}.",
     "rarity": "normal",
     "flavourText": "A pinnacle of dwarven ingenuity, simple and brilliant design that allows for efficient extraction of precious shinies.",
     "value": {

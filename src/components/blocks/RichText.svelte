@@ -1,10 +1,10 @@
 <script lang="ts" context="module">
     type ComponentDescriptor = {
-        type: "resource" | "newline" | "keyword" | "icon" | "unknown",
+        type: "resource" | "newline" | "keyword" | "icon" | "section" | "unknown",
         props?: any
     };
 
-    const specialBlockSyntaxPattern = /{(?<type>r|n|kw|R|i):?(?<desc>(?<spec>(\w|\s)+)(=(?<value>[\w\+]+))?)?}/gm;
+    const specialBlockSyntaxPattern = /{(?<type>r|n|section|kw|R|i):?(?<desc>(?<spec>(\w|\s)+)(=(?<value>[\w\+]+))?)?}/gm;
 
     function getSpecialComponentDescriptor(match: RegExpExecArray): ComponentDescriptor {
         const type = match.groups!["type"];
@@ -21,6 +21,12 @@
         if (type == "n") {
             return {
                 type: "newline"
+            }
+        }
+
+        if (type == "section") {
+            return {
+                type: "section"
             }
         }
 
@@ -81,12 +87,19 @@
         <br/>
     {:else if component.type === "icon"}
         <div class="icon-holder"><Icon {...component.props}/></div>
+    {:else if component.type === "section"}
+        <br/>
+        <div class="section-break"></div>
     {:else}
         <span style="color: red; font-weight: bold">"-Unknown rich text component-"</span>
     {/if}
 {/each}
 
 <style>
+    :root {
+        --section-break-height-mm: 0.7;
+        --section-break-height: calc(var(--section-break-height-mm) * var(--dpi-factor) * 1px);
+    }
     .icon-holder {
         top: -3px;
         height: 15px;
@@ -94,6 +107,10 @@
         display: inline-block;
         vertical-align: middle;
         position: relative;
+    }
+
+    .section-break {
+        height: var(--section-break-height);
     }
 
     .text-bit {

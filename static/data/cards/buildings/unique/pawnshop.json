@@ -3,7 +3,7 @@
     "type": "Unique Building",
     "artUri": "art/cards/buildings/unique/pawnshop.png",
     "layout": "normal",
-    "mainText": "Put a resource card into Pawn Shop: Add {r:shinies=x}.{n}If pawn shop is ready, any player may pay {r:shinies=x} to add the card in the Pawn Shop to their hand.{n}X is equal to the value of the card in the pawn shop.",
+    "mainText": "{i:tap=3}, Put a resource card into Pawn Shop: Add {r:shinies=x}.{section}If pawn shop is not tapped, any player may pay {r:shinies=x} to add the card in the Pawn Shop to their hand. X is equal to the value of the card in the pawn shop.",
     "rarity": "normal",
     "flavourText": "There is always someone who finds value in the random booze bottles and rocks you have.",
     "value": {

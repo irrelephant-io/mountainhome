@@ -3,7 +3,7 @@
     "type": "Basic Building",
     "artUri": "art/cards/buildings/basic/quarry.png",
     "layout": "normal",
-    "mainText": "Add {r:rocks=2}.",
+    "mainText": "{i:tap=3}: Add {r:rocks=2}.",
     "rarity": "normal",
     "flavourText": "I dig my hole, you build the wall...",
     "value": {

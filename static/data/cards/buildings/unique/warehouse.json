@@ -3,7 +3,7 @@
     "type": "Unique Building",
     "artUri": "art/cards/buildings/unique/warehouse.png",
     "layout": "normal",
-    "mainText": "You may put up to one resource card into the Warehouse. That resource card can be used as if it were in your hand.",
+    "mainText": "{i:tap=3}: Put up to one resource card into the Warehouse.{section}Resources inside the warehouse can be used as if they were in your hand.",
     "rarity": "normal",
     "flavourText": "Don’t underestimate the importance of a good labelling system! - Ori, the Quartermaster",
     "value": {

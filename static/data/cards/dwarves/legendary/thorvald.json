@@ -3,7 +3,7 @@
     "type": "Legendary Dwarf",
     "artUri": "art/cards/dwarves/legendary/thorvald.png",
     "layout": "normal",
-    "mainText": "Reveal cards from the top of the exploration pile until you reveal an event card and put it on top of the exploration pile. Put the rest on the bottom of the exploration pile in random order.",
+    "mainText": "{i:dwarf=3}: Reveal cards from the top of the exploration pile until you reveal an event card and put it on top of the exploration pile. Put the rest on the bottom of the exploration pile in random order.",
     "rarity": "rare",
     "flavourText": "Approximately half the time, is absolutely hated by the dwarven community. Otherwise pretty all right. - Marg, the Master Smith.",
     "value": {

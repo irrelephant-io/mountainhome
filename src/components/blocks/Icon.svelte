@@ -11,8 +11,8 @@
         "rocks": "icons/rock.png",
         "mixed": "icons/mixed.png",
         "booze": "icons/booze.png",
-        "dwarf": "icons/unknown.png",
-        "tap": "icons/unknown.png"
+        "dwarf": "icons/dwarf.png",
+        "tap": "icons/tap.png"
     };
 </script>
 

@@ -5,7 +5,7 @@
     "layout": "normal",
     "mainText": "Each player can only have one project in their deck or in their town.{n}{n}This project additionally awards {r:vp=1} for each construction progress even if it is unfinished.",
     "rarity": "rare",
-    "flavourText": "We believe that one day, our impeccable craftsdwarfship will unite every denizen of Rootheim under one roof. It is going to be a feast!",
+    "flavourText": "We believe that one day, our impeccable craftsdwarfship will unite every denizen of Rootheim under one roof!",
     "value": {
         "resource": "vp",
         "value": "2"

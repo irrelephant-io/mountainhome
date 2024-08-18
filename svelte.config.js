@@ -8,7 +8,7 @@ const config = {
         adapter: adapter({
             customStaticWebAppConfig: {
                 platform: {
-                    apiRuntime: 'node:22'
+                    apiRuntime: 'node:20'
                 }
             }
         }),

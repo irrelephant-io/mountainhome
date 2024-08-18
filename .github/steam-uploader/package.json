@@ -1,9 +1,0 @@
-{
-  "name": "steam-uploader",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "steamapi": "^3.0.11"
-  }
-}

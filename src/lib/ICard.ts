@@ -13,6 +13,6 @@ export interface ICard {
     layout: LayoutType,
     rarity: Rarity,
     flavourText?: string
-    value: IValue,
+    value?: IValue,
     cost?: Cost
 }

@@ -39,24 +39,23 @@
     }
 </script>
 
+{#if cardIndex.length > 0}
+    <select bind:value={selectedCard}>
+        {#each cardIndex as path}
+            <option value={path}>{path}</option>
+        {/each}
+    </select>
+    <button on:click={exportImage}>Print</button>
 
-<PrintContext>
-    {#if cardIndex.length > 0}
-        <select bind:value={selectedCard}>
-            {#each cardIndex as path}
-                <option value={path}>{path}</option>
-            {/each}
-        </select>
-        <button on:click={exportImage}>Print</button>
-
-        <div id="export" style="{styled(printStyles)}">
-            {#if card !== undefined}
+    <div id="export" style="{styled(printStyles)}">
+        {#if card !== undefined}
+            <PrintContext>
                 <Card definition={card}/>
-            {:else}
-                <span>Loading preview...</span>
-            {/if}
-        </div>
-    {:else}
-        <p>Loading index...</p>
-    {/if}
-</PrintContext>
+            </PrintContext>
+        {:else}
+            <span>Loading preview...</span>
+        {/if}
+    </div>
+{:else}
+    <p>Loading index...</p>
+{/if}

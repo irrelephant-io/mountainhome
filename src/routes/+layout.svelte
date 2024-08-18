@@ -1,6 +1,4 @@
 <style>
-    @import '../sizes.css';
-    
     :root {
         --main-font-family: Donegal One;
         --alt-font-family: Farsan;

@@ -1,5 +1,7 @@
 <script lang="ts">
     import type { IconType } from "$lib/Icon";
+    import { mm2pix, styled, url } from "$lib/LayoutUtils";
+    import { makeAbsolute } from "$lib/UrlUtils";
 
     export let size: number;
     export let typographicHeight: number = size;
@@ -14,10 +16,16 @@
         "dwarf": "icons/dwarf.png",
         "tap": "icons/tap.png"
     };
+
+    $: css = {
+        'width': mm2pix(size),
+        'height': mm2pix(typographicHeight),
+        'icon-uri': url(iconLookup[type])
+    };
 </script>
 
-<div class="icon-holder" style="--width-mm: {size}; --height-mm: {typographicHeight};">
-    <div class="icon" style="--icon: url('{window.location.origin}/{iconLookup[type]}');" />
+<div class="icon-holder" style={styled(css)}>
+    <div class="icon" />
 </div>
 
 <style>
@@ -32,7 +40,9 @@
         & .icon {
             position: absolute;
             display: inline-block;
-            background: var(--icon) no-repeat center;
+            background-image: var(--icon-uri);
+            background-repeat: no-repeat;
+            background-position: center;
             background-size: contain;
             width: var(--width);
             height: var(--width);

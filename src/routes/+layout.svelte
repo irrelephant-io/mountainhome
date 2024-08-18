@@ -22,6 +22,8 @@
     <a href="/">home</a>
     |
     <a href="/card-builder">card builder</a>
+    |
+    <a href="/print">card printer</a>
 </nav>
 
 <slot></slot>

@@ -1,27 +1,24 @@
 <script lang="ts">
+    import { mm2pix, styled } from "$lib/LayoutUtils.js";
     import type { Rarity } from "$lib/Rarity.js";
     import type { IValue } from "../../lib/Value.ts";
     import Value from "./Value.svelte";
     
     export let value: IValue;
     export let rarity: Rarity;
-
+    $: css = {
+        'cost-block-offset': mm2pix(1),
+        'cost-block-size': mm2pix(8.4)
+    };
 </script>
 
-<div class="box {rarity}">
+<div class="box {rarity}" style="{styled(css)}">
     <div class="box-content">
         <Value value={value} style="big" />
     </div>
 </div>
 
 <style>
-    :root {
-        --cost-block-offset-mm: 1;
-        --cost-block-offset: calc(var(--cost-block-offset-mm) * var(--dpi-factor) * 1px);
-
-        --cost-block-size-mm: 8.4;
-        --cost-block-size: calc(var(--cost-block-size-mm) * var(--dpi-factor) * 1px);
-    }
     .box {
         width: var(--cost-block-size);
         height: var(--cost-block-size);

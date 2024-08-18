@@ -1,28 +1,25 @@
 <script lang="ts">
+    import { mm2pix, styled } from "$lib/LayoutUtils.js";
     import type { Rarity } from "../../lib/Rarity.ts";
 
     export let title: string;
     export let rarity: Rarity;
+
+    $: css = {
+        'height': mm2pix(5),
+        'font-size': mm2pix(2.7),
+        'padding': mm2pix(2)
+    }
 </script>
 
-<div class="name box {rarity}">{title}</div>
+<div class="name box {rarity}" style={styled(css)}>{title}</div>
 
 <style lang="css">
-    :root {
-        --title-height-mm: 5;
-        --title-font-size-mm: 2.7;
-        --padding-mm: 2;
-
-        --padding: calc(var(--padding-mm) * var(--dpi-factor) * 1px);
-        --title-height: calc(var(--title-height-mm) * var(--dpi-factor) * 1px);
-        --title-font-size: calc(var(--title-font-size-mm) * var(--dpi-factor) * 1px);
-    }
-
     .name {
-        height: var(--title-height);
-        line-height: var(--title-height);
+        height: var(--height);
+        line-height: var(--height);
         position: relative;
-        font-size: var(--title-font-size);
+        font-size: var(--font-size);
         font-weight: 700;
     }
     
@@ -35,7 +32,7 @@
             rgba(0, 0, 0, 0.00) 100%
         ),rgba(223, 228, 234, 0.60);
         border: 1px solid black;
-        border-radius: calc(var(--title-height) / 2);
+        border-radius: calc(var(--height) / 2);
         padding: 0 var(--padding);
         flex-shrink: 0;
     }

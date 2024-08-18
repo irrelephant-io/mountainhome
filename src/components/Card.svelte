@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { mm2pix, styled } from "$lib/LayoutUtils";
     import type { ICard } from "../lib/ICard";
     import CostTrack from "./blocks/CostTrack.svelte";
     import ValueBox from "./blocks/ValueBox.svelte";
@@ -8,9 +9,15 @@
     import Normal from "./layouts/Normal.svelte";
 
     export let definition: ICard;
+
+    $: css = {
+        'width': mm2pix(63.5),
+        'height': mm2pix(88.9),
+        'padding': mm2pix(2)
+    };
 </script>
 
-<div class="card">
+<div class="card" style="{styled(css)}">
     <div class="outer">
         <div class="inner {definition.rarity}">
             <header>
@@ -45,16 +52,6 @@
 </div>
 
 <style>
-    :root {
-        --width-mm: 63.5;
-        --height-mm: 88.9;
-        --border-mm: 2;
-
-        --width: calc(var(--width-mm) * var(--dpi-factor) * 1px);
-        --height: calc(var(--height-mm) * var(--dpi-factor) * 1px);
-        --padding: calc(var(--border-mm) * var(--dpi-factor) * 1px);
-    }
-
     .outer {
         width: var(--width);
         height: var(--height);

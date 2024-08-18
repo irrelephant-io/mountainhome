@@ -1,18 +1,24 @@
 <script lang="ts" context="module">
-    import type { IValue } from "../../lib/Value.ts";
     export type ValueStyle = "big" | "small";
-
-
 </script>
 
 <script lang="ts">
+    import type { IValue } from "../../lib/Value.ts";
+    import { mm2pix, styled } from "$lib/LayoutUtils";
     import Icon from "./Icon.svelte";
 
     export let value: IValue;
     export let style: ValueStyle = "small";
+    
+    $: css = {
+        'large-value-size': mm2pix(7.2),
+        'mall-value-size': mm2pix(3.8),
+        'small-text-size': mm2pix(2.2),
+        'large-text-size': mm2pix(3.2)
+    };
 </script>
 
-<div class="box {style}">
+<div class="box {style}" style="{styled(css)}">
     <Icon type={value.resource} size={style == "small" ? 3 : 6}></Icon>
     {#if value.value !== '_'}
         <span class="value {style}">{value.value}</span>
@@ -20,15 +26,6 @@
 </div>
 
 <style lang="css">
-    :root {
-        --large-value-size-mm: 7.2;
-        --small-value-size-mm: 3.8;
-        --large-text-size-mm: 3.2;
-        --small-text-size-mm: 2.2;
-
-        --large-value-size: calc(var(--large-value-size-mm) * var(--dpi-factor) * 1px);
-        --small-value-size: calc(var(--small-value-size-mm) * var(--dpi-factor) * 1px);
-    }
     .value {
         position: absolute;
         font-family: 'Farsan';

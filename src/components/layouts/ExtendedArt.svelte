@@ -1,14 +1,20 @@
 <script lang="ts">
     import type { ICard } from "../../lib/ICard";
-    import ExtendedArt from "../blocks/ExtendedArt.svelte";
+    import Art from "../blocks/Art.svelte";
     import CardTitle from "../blocks/CardTitle.svelte";
     import TextBox from "../blocks/TextBox.svelte";
+    import { mm2pix, styled } from "$lib/LayoutUtils";
+    
 
     export let definition: ICard;
+
+    $: css = {
+        'gap': mm2pix(2)
+    };
 </script>
 
-<main class="main-block">
-    <ExtendedArt uri={definition.artUri}/>
+<main class="main-block" style="{styled(css)}">
+    <Art height={55} uri={definition.artUri}/>
     <CardTitle
         title={definition.title}
         rarity={definition.rarity}
@@ -23,11 +29,6 @@
 </main>
 
 <style>
-    :root {
-        --gap-mm: 2;
-        --gap: calc(var(--gap-mm) * var(--dpi-factor) * 1px);
-    }
-
     main.main-block {
         display: flex;
         flex-direction: column;

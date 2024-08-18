@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { mm2pix, styled } from "$lib/LayoutUtils";
     import type { Rarity } from "$lib/Rarity";
     import type { Watermark } from "$lib/Watermark";
     import RichText from "./RichText.svelte";
@@ -9,9 +10,22 @@
     export let mainText: string | undefined;
     export let flavourText: string | undefined;
     export let cardType: string;
+
+    $: css = {
+        'type-box-vertical-offset': mm2pix(1),
+        'type-box-width': mm2pix(35),
+        'text-box-border-radius': mm2pix(2.5),
+        'text-box-font-size': mm2pix(2.5),
+        'type-box-height': mm2pix(2.9),
+        'main-text-padding-top': mm2pix(1.2),
+        'main-text-padding-sides': mm2pix(1.7),
+        'flavour-padding-sides': mm2pix(2),
+        'flavour-padding-top': mm2pix(0.5),
+        'flavour-padding-bottom': mm2pix(1)
+    };
 </script>
 
-<div class="box">
+<div class="box" style={styled(css)}>
     {#if mainText && flavourText}
         <div class="main {rarity} round-top solid-top solid-bottom solid-sides">
             <RichText text={mainText}/>
@@ -40,32 +54,6 @@
 </div>
 
 <style lang="css">
-    :root {
-        --type-box-vertical-offset-mm: 1;
-        --type-box-vertical-offset: calc(var(--type-box-vertical-offset-mm) * var(--dpi-factor) * 1px);
-        --type-box-width-mm: 35;
-        --type-box-width: calc(var(--type-box-width-mm) * var(--dpi-factor) * 1px);
-
-        --text-box-border-radius-mm: 2.5;
-        --text-box-border-radius: calc(var(--text-box-border-radius-mm) * var(--dpi-factor) * 1px);
-        --text-box-font-size-mm: 2.5;
-        --text-box-font-size: calc(var(--text-box-font-size-mm) * var(--dpi-factor) * 1px);
-        --type-box-height-mm: 2.9;
-        --type-box-height: calc(var(--type-box-height-mm) * var(--dpi-factor) * 1px);
-        
-        --main-text-padding-sides-mm: 1.7;
-        --main-text-padding-sides: calc(var(--main-text-padding-sides-mm) * var(--dpi-factor) * 1px);
-        --main-text-padding-top-mm: 1.2;
-        --main-text-padding-top: calc(var(--main-text-padding-top-mm) * var(--dpi-factor) * 1px);
-
-        --flavour-padding-sides-mm: 2;
-        --flavour-padding-top-mm: 0.5;
-        --flavour-padding-bottom-mm: 1;
-        --flavour-padding-sides: calc(var(--flavour-padding-sides-mm) * var(--dpi-factor) * 1px);
-        --flavour-padding-top: calc(var(--flavour-padding-top-mm) * var(--dpi-factor) * 1px);
-        --flavour-padding-bottom: calc(var(--flavour-padding-bottom-mm) * var(--dpi-factor) * 1px);
-    }
-
     .flavour {
         position: relative;
         font-size: var(--text-box-font-size);
